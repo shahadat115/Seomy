@@ -1,1 +1,0 @@
-sass --watch C:\Users\User\Desktop\Seomy\assets\scss\main.scss:C:\Users\User\Desktop\Seomy\assets\css\style.css
