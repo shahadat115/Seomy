@@ -1,0 +1,43 @@
+@use '../../utils' as *;
+
+.tp-review{
+    &-inner{
+        padding: 48px 10px;
+        border-top: 1px solid #EEE;
+        border-bottom: 1px solid #EEEEEE;
+    }
+    &-item{
+        padding: 10px 55px;
+    }
+    &-content{
+        & p{
+            font-size: 15px;
+            font-family: var(--tp-jakarta);
+            color: var(--tp-body-color-2);
+            line-height: 1;
+        }
+    }
+    &-border{
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 80px;
+            background-color: #EEEEEE;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 80px;
+            background-color: #EEEEEE;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}

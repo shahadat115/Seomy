@@ -1,0 +1,123 @@
+@use '../utils' as *;
+
+
+.tp-section{
+    &-content-wrapper{
+        &-2{
+            & p{
+                font-size: 18px;
+                font-family: var(--tp-dmsans);
+                color: var(--tp-grey-6);
+                margin-bottom: 5px;
+            }
+        }
+    }
+    &-title{
+        font-size: 54px;
+        font-weight: 700;
+        & span{
+            font-weight: 300;
+        }
+        & br{
+            @media #{$xs}{
+                display: none;
+            }
+        }
+        @media #{$md}{
+            font-size: 50px;
+        }
+        @media #{$sm}{
+            font-size: 45px;
+        }
+        @media #{$xs}{
+            font-size: 36px;
+        }
+    }
+    &-title-2{
+        font-size: 60px;
+        font-weight: 700;
+        font-family: var(--tp-dmsans);
+        color: var(--tp-rich-black);
+        @media #{$lg}{
+            font-size: 55px;
+        }
+        @media #{$md}{
+            font-size: 50px;
+        }
+        @media #{$sm}{
+            font-size: 40px;
+        }
+        @media #{$sm}{
+            font-size: 40px;
+        }
+        @media #{$xs}{
+            font-size: 30px;
+        }
+        & span{
+            position: relative;
+            z-index: 2;
+            & svg{
+                position: absolute;
+                left: 10px;
+                bottom: -4px;
+                z-index: -1;
+                color: var(--tp-light-yellow);
+                @media #{$md,$sm}{
+                    left: -20px;
+                    bottom: -10px;
+                }
+                @media #{$xs}{
+                    left: -30px;
+                    bottom: -15px;
+                }
+            }
+        }
+        & .shape-2{
+            & svg{
+                left: 40px;
+                bottom: -5px;
+                @media #{$sm}{
+                    left: 10px;
+                    bottom: -10px;
+                }
+                @media #{$xs}{
+                    left: -90px;
+                    bottom: -20px;
+                }
+            }
+        }
+        & .shape-3{
+            
+            & svg{
+                left: -10px;
+                bottom: -5px;
+                @media #{$lg}{
+                    left: -220px;
+                    bottom: -10px;
+                }
+                @media #{$sm,$xs}{
+                    left: -150px;
+                    bottom: -18px;
+                }
+            }
+        }
+    }
+    &-subtitle{
+        font-size: 18px;
+        font-weight: 600;
+        font-family: var(--tp-jakarta);
+        line-height: 20px;
+        background: linear-gradient(90deg, #501E9C 0%, #A44CEE 43.75%, #FF847F 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    &-title-3{
+        font-size: 50px;
+        font-family: var(--tp-jakarta);
+        color: var(--tp-rich-black);
+        &.bg-title{
+            font-size: 60px;
+        }
+    }
+}

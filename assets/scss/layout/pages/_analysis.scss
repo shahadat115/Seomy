@@ -1,0 +1,102 @@
+@use '../../utils' as *;
+
+.tp-analysis{
+    &-switch-wrap{
+        & label{
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--tp-theme-sec);
+        }
+    }
+    &-switch{
+        position: relative;
+        width: 60px;
+        height: 30px;
+        border-radius: 100px;
+        background-color: #E9EBF3;
+        overflow: hidden;
+        cursor: pointer;
+        margin: 0 20px;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            border-radius: 36px;
+            background-color: var(--tp-theme-primary);
+            top: 50%;
+            left: 6px;
+            transform: translateY(-50%);
+            z-index: 1;
+            transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+            box-shadow: 0px 2px 4px rgba(0, 20, 128, 0.3);
+        }
+        &.is-active{
+            &::after{
+                left: calc(100% - 26px - 6px);
+            }
+        }
+    }
+    &-category{
+        text-align: center;
+    }
+    &-item{
+        display: inline-block;
+        & p{
+            font-size: 15px;
+            color: var(--tp-grey-2);
+            font-weight: 500;
+            line-height: 24px;
+        }
+    }
+    &-counter{
+        font-size: 30px;
+        font-weight: 600;
+        color: var(--tp-common-black);
+    }
+    &-monthly{
+        &.hide{
+            display: none;
+        }
+    }
+    &-hourly{
+        display: none;
+        &.show{
+            display: block;
+        }
+    }
+    &-shape{
+        &-one{
+            position: absolute;
+            left: -9%;
+            top: -185px;
+            @media #{$lg,$md}{
+                left: -7%;
+            }
+            & img{
+                @media #{$lg}{
+                    width: 70%;
+                }
+                @media #{$md,$sm,$xs}{
+                    display: none;
+                }
+            }
+        }
+        &-two{
+            position: absolute;
+            right: -8%;
+            top: -185px;
+            @media #{$lg}{
+                right: -15%;
+            }
+            & img{
+                @media #{$lg}{
+                    width: 70%;
+                }
+                @media #{$md,$sm,$xs}{
+                    display: none;
+                }
+            }
+        }
+    }
+}

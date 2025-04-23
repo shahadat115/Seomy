@@ -1,0 +1,13 @@
+@use '../../utils' as *;
+
+.tp-clients{
+    &-height{
+        min-height: 700px;
+        @media #{$md}{
+            min-height: 550px;
+        }
+        @media #{$sm,$xs}{
+            min-height: 500px;
+        }
+    }
+}

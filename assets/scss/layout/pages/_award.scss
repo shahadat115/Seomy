@@ -1,0 +1,110 @@
+@use '../../utils' as *;
+
+.tp-award{
+    &-item{
+        transform: translateY(46px);
+        box-shadow: 0px 20px 20px rgba(46, 30, 10, 0.12);
+        @media #{$xl,$lg,$md,$sm,$xs}{
+            margin-top: 0px;
+            margin-bottom: 20px;
+            transform: translateY(0px);
+        }
+        & img{
+            width: 100%;
+        }
+        &.item{
+            &-1{
+                margin-top: 44px;
+                @media #{$xl,$lg,$md,$sm,$xs}{
+                    margin-top: 0px;
+                    
+                }
+            }
+            &-2{
+                margin-top: -10px;
+                @media #{$xl,$lg,$md,$sm,$xs}{
+                    margin-top: 0px;
+                    
+                }
+            }
+            &-3{
+                margin-top: 54px;
+                @media #{$xl,$lg,$md,$sm,$xs}{
+                    margin-top: 0px;
+                    
+                }
+            }
+            &-5{
+                margin-top: 64px;
+                @media #{$xl,$lg,$md,$sm,$xs}{
+                    margin-top: 0px;
+                    
+                }
+            }
+            &-7{
+                margin-top: 74px;
+                @media #{$xl,$lg,$md,$sm,$xs}{
+                    margin-top: 0px;
+                    
+                }
+            }
+        }
+       
+    }
+    &-content-3{
+        & span {
+            font-size: 13px;
+            font-weight: 500;
+            font-family: var(--tp-jakarta);
+            color: #A3A4A5;
+        }
+    }
+    &-title{
+        font-size: 22px;
+        font-weight: 500;
+        font-family: var(--tp-jakarta);
+        color: var(--tp-rich-black);
+    }
+    &-bg{
+        margin: 0 200px;
+        position: relative;
+        z-index: 5;
+        @media #{$xl,$lg,$md,$sm,$xs}{
+            margin: 0px;
+            padding-bottom: 50px;
+        }
+    }
+    &-border{
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 120px;
+            background-color: #EEEEEE;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 120px;
+            background-color: #EEEEEE;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &-shape{
+        &-one{
+            left: 15%;
+            top: 120px;
+        }
+        &-two{
+            right: -50px;
+            top: 50px;
+        }
+    }
+}

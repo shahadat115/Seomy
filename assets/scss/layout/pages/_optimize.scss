@@ -1,0 +1,26 @@
+@use '../../utils' as *;
+
+
+.tp-optimize{
+    &-score-wrapper{
+        & .tp-drive-score-title{
+            font-family: var(--tp-jakarta);
+            font-weight: 500;
+            color: var(--tp-rich-black);
+        }
+    }
+    &-shape{
+        &-thumb{
+            left: -24%;
+            top: -18%;
+        }
+        &-1{
+            left: -15%;
+            top: 40%;
+        }
+        &-2{
+            right: -15%;
+            top: 20%;
+        }
+    }
+}

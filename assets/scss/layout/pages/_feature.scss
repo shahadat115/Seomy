@@ -1,0 +1,92 @@
+@use '../../utils' as *;
+
+.tp-feature{
+    &-item{
+        & img{
+            opacity: 0.6;
+            @include transition(.3s);
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+    &-title {
+        font-size: 24px;
+        font-weight: 700;
+        font-family: var(--tp-jakarta);
+        color: var(--tp-common-white);
+    }
+    &-bg{
+        &-one{
+            z-index: -1;
+        }
+        &-two{
+            z-index: -2;
+        }
+    }
+    &-dots{
+        & .slick-dots{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20px;
+            bottom: 0;
+            & li{
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: rgba(255,255,255, 0.4);
+                @include transition(.3s);
+                & button{
+                    display: inline-block;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                }
+                &.slick-active{
+                    width: 14px;
+                    height: 14px;
+                    border: 2px solid #fff;
+                    background-color: transparent;
+    
+                }
+            }
+        }
+    }
+    &-icon-2{
+        & span {
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            top: 8px;
+            font-size: 15px;
+            font-weight: 500;
+            font-family: var(--tp-poppins);
+            color: var(--tp-common-white);
+            transform: translateX(-50%);
+        }
+    }
+    &-title-2 {
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--tp-rich-black);
+    }
+    &-content-2{
+        & p{
+            font-size: 15px;
+            font-family: var(--tp-jakarta);
+            color: #6F7276;
+        }
+    }
+    &-shape{
+        &-1{
+            left: -15%;
+            top: 40%;
+        }
+        &-2{
+            right: 0;
+            top: 10%;
+        }
+    }
+}

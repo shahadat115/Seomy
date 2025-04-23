@@ -1,0 +1,64 @@
+@use '../../utils' as *;
+
+
+.tp-choose{
+    &-left{
+        @media #{$md,$sm,$xs}{
+            padding-right: 0;
+        }
+    }
+    &-thumb{
+        & > img{
+            border-radius: 51% 49% 77% 23% / 65% 50% 50% 35%;
+        }
+    }
+    &-shape{
+        &-one{
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+        }
+        &-two{
+            top: 50px;
+            left: 60px;
+            z-index: -1;
+        }
+        &-three{
+            bottom: 10px;
+            right: 10px;
+            z-index: -1;
+        }
+
+    }
+    &-item{
+        padding: 32px 30px 33px 30px;
+        border: 1px solid rgba(12, 19, 56, 0.08);
+        border-radius: 10px;
+        @include transition(.3s);
+        &:hover{
+            box-shadow: 0px 20px 40px rgba(8, 10, 55, 0.12);
+        }
+    }
+    &-icon {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    &-title{
+        font-size: 20px;
+        font-weight: 600;
+        color: #0F1123;
+        @include transition(.3s);
+        &:hover{
+            color: var(--tp-theme-primary);
+        }
+    }
+    &-arrow {
+        color: var(--tp-grey-4);
+        font-size: 30px;
+        @include transition(.3s);
+        &:hover{
+            color: var(--tp-theme-primary);
+        }
+    }
+}
+

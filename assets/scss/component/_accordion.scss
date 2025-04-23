@@ -1,0 +1,94 @@
+@use '../utils' as *;
+
+.tp-accordion{
+    &-content{
+        & span {
+            font-size: 16px;
+            font-family: var(--tp-dmsans);
+            color: var(--tp-body-color-2);
+            display: block;
+            margin-bottom: 3px;
+        }
+        & p{
+            font-size: 24px;
+            font-family: var(--tp-dmsans);
+            color: var(--tp-rich-black);
+
+        }
+    }
+    &-shape-one{
+        left: 18%;
+        top: 70%;
+        @media #{$xl}{
+            top: 77%; 
+            left: 22%;
+        }
+        @media #{$lg}{
+            top: 77%; 
+            left: 23%;
+        }
+        @media #{$md}{
+            top: 70%;
+            left: 15%; 
+        }
+        @media #{$xs}{
+            left: 30%;
+            top: 65%;
+        }
+    }
+    &-box{
+        & .accordion-item {
+            border-radius: 0;
+            border-left: 0;
+            border-right: 0;
+            padding: 12px 0;
+        }
+        & .accordion-header{
+            padding: 20px 0;
+            @media #{$xs}{
+                padding: 12px 0;
+            }
+            & .accordion-buttons{
+                font-size: 20px;
+                font-weight: 500;
+                font-family: var(--tp-dmsans);
+                color: var(--tp-theme-green);
+                display: block;
+                width: 100%;
+                text-align: left;
+                position: relative;
+                @media #{$xs}{
+                    font-size: 18px;
+                }
+                &::before{
+                    content: "\f00d";
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    font-size: 18px;
+                    font-family: var(--tp-font-awesome);
+                    @include transition(.4s);
+                }
+                &.collapsed{
+                    color: var(--tp-rich-black);
+                    @include transition(.3s);
+                    &::before{
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+        & .accordion-body {
+            padding: 0 0 20px 0;
+            margin:0;
+            font-size: 16px;
+            font-family: var(--tp-dmsans);
+            color: var(--tp-body-color-2);
+        }
+    }
+    &-right{
+        @media #{$lg,$md,$sm,$xs}{
+            padding-left: 0px !important;
+        }
+    }
+}

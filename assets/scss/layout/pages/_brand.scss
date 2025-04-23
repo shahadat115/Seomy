@@ -1,0 +1,9 @@
+@use '../../utils' as *;
+
+.tp-brand{
+    &-item{
+        width: auto;
+        display: inline-block;
+        transition-timing-function: linear;
+    }
+}

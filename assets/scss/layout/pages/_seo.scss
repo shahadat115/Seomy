@@ -1,0 +1,105 @@
+@use '../../utils' as *;
+
+.tp-seo{
+    &-bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: linear-gradient(324deg, rgba(192, 223, 214, 0.8) 0%, rgba(233, 234, 201, 0.8) 100%);
+        &-2{
+            background: linear-gradient(145deg, #fedcca 0%, #faf3e5 100%);
+        }
+        &-3{
+            background: linear-gradient(324deg, rgba(192, 223, 214, 0.8) 0%, rgba(233, 234, 201, 0.8) 100%);
+        }
+    }
+    &-item{
+        padding: 60px 30px 0px 40px;
+        min-height: 480px;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        @include transition(.3s);
+        &:hover{
+            transform: scale(1.08);
+            & .tp-seo{
+                &-content{
+                    & p{
+                        transform: translateY(0px);
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+                &-btn{
+                    transform: translateY(0px);
+                    opacity: 1;
+                    visibility: visible;
+                }
+                &-thumb{
+                    & img{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+    &-title{
+        font-size: 30px;
+        font-weight: 700;
+        font-family: var(--tp-dmsans);
+        color: var(--tp-rich-black);
+        display: inline-block;
+        @include transition(.3s);
+        &:hover{
+            color: var(--tp-theme-green);
+        }
+    }
+    &-content{
+        & p{
+            font-size: 18px;
+            font-family: var(--tp-dmsans);
+            color: var(--tp-body-color-2);
+            transform: translateY(30px);
+            transition: all 0.3s ease 0.1s;
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+    &-btn{
+        font-size: 16px;
+        font-weight: 500;
+        font-family: var(--tp-dmsans);
+        color: var(--tp-rich-black);
+        display: inline-block;
+        transform: translateY(20px);
+        transition: all 0.3s ease 0.2s;
+        opacity: 0;
+        visibility: hidden;
+        &:hover{
+            color: var(--tp-rich-black);
+            & svg{
+                transform: translateX(5px);
+            }
+        }
+        & svg{
+            display: inline-block;
+            margin-left: 2px;
+            @include transition(.3s);
+        }
+    }
+    &-thumb{
+        display: flex;
+        justify-content: center;
+        & img{
+            @include transition(.3s);
+        }
+    }
+}

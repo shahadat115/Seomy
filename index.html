@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seomy</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    
+    <!-- header-area-start -->
+    <header>
+        <div class="tp-header-area tp-header-padding" data-bg-color="#F4F5F9">
+            <div class="container">
+                <div class="tp-mega-menu-wrapper">
+                    <div class="row align-items-center">
+                        <div class="col-xxl-2 col-lg-2 col-5">
+                            <div class="tp-logo">
+                                <a href="">
+                                    <img src="assets/img/logo/logo-1.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xxl-8 col-lg-7 d-none d-lg-block">
+                            <div class="tp-main-menu text-center pl-65">
+                              <nav>                                                  
+                                <ul>
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">About</a></li>
+                                    <li><a href="">Projects</a></li>
+                                    <li><a href="">Pages</a></li>
+                                    <li><a href="">Blog</a></li>
+                                    <li><a href="">Contact</a></li>
+                                </ul>
+                              </nav>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2 col-lg-3 col-7">
+                            <div class="tp-header-right d-flex align-items-center justify-content-end">
+                                <div class="tp-search-btn-wrap mr-18">
+                                    <button class="tp-search-btn">
+                                        <i class="tp-search-btn-src">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.55 18.1C14.272 18.1 18.1 14.272 18.1 9.55C18.1 4.82797 14.272 1 9.55 1C4.82797 1 1 4.82797 1 9.55C1 14.272 4.82797 18.1 9.55 18.1Z" stroke="#271D3A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M19.0001 19L17.2001 17.2" stroke="#271D3A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                             </svg>
+                                        </i>
+                                    </button>
+                                </div>
+                                <div class="tp-header-btn-wrap">
+                                    <a href="" class="tp-header-btn">Get a Qouta</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-area-end -->
+
+    <main>
+
+        <!-- banner-area-start -->
+        <section class="tp-banner-area p-relative tp-banner-space tp-banner-bg-shape" data-background="assets/img/banner/h1-banner.png">
+            <div class="tp-banner-shape-wrapper">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-8 col-lg-10 col-md-12 col-10">
+                            <div class="tp-banner-content text-center">
+                                <div class="tp-banner-sub-title">
+                                    <span>Welcome To</span>
+                                    <i>
+                                        <svg width="110" height="35" viewBox="0 0 110 35" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <rect width="110" height="34.1" fill="url(#pattern0_2214_119)" fill-opacity="0.08"/>
+                                        <defs>
+                                        <pattern patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_2214_119" transform="translate(-0.06) scale(0.00611111 0.0197133)"/>
+                                        </pattern>
+                                        <image width="180" height="50" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAyCAYAAAD1JPH3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMS1jMDAwIDc5LmVkYTJiM2ZhYywgMjAyMS8xMS8xNy0xNzoyMzoxOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUMyMzkwQTczMTM3MTFFRDg3NUZBOUZCRDk1MThFMTMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUMyMzkwQTYzMTM3MTFFRDg3NUZBOUZCRDk1MThFMTMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIzLjEgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjFBQkIwMjIzMTA2MTFFREEzRkNBQzVFOTRFRTVERTgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjFBQkIwMjMzMTA2MTFFREEzRkNBQzVFOTRFRTVERTgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5lgZ3iAAAB2ElEQVR42uzd7U3CUBiA0Wr4DxvQDWQE4gS6gSO6ibhB2aBMoCG5ja83pVRaSSnnJE2/MII+t7386sPz21dxQ1ZpKdNSpPUynItL/nNd6rSc2t6n/Sot+TYTsJhgrJsU6TqLt7zS779EE3ad1vuwvwuDg5kF3QQao92E47fq3ICrQ/RN8LsQPBMPOob7lEV8j5o7z6Yj+Cbwzyx+U5orB32MdCvcwcFv0/ZLx5SmubrHAVCZ0lwW9CrEu07rcsC8k/GmNPk8vg7hx2P13K/4fYP+6LhdcjvR5wMgrmP0h5bXxdecmjadu1N0ffFuOxc/zzKcP65fhwQt5nkOgGJu08NH/1cEDYIGQYOgETQIGgQNggZBI2gQNAgaBA2CRtAgaBA0CBoEjaBB0CBoEDQIGkGDoEHQIGgQNIIGQYOgQdAgaAQNE7aY+Ptre7JSn6ct9VWe2UfQvx4XFuPbZ+fz1/5HsGPEHh831mw359bhWH6OCQf9Xvw8v67OQmyLcg6GfJ4Yd769Dvviv+yuXQ0N+tXf8aKpUtUz/rJlvWw5Pmf5RfIQ7vJV0fO55wvtTSL+3R+mQasTd4BlyzRpdeWBEKeL+aC+yt1d0PczDSpH/PJbjfi+RvUtwADssXzgKiX3gwAAAABJRU5ErkJggg=="/>
+                                        </defs>
+                                        </svg>
+                                    </i>
+                                </div>
+                                <h1 class="tp-banner-title mb-20">SEO Marketing <br>
+                                & Agency.</h1>
+                                <p>Ensuring the best return on investment for your bespoke SEO <br>
+                                Campaign requirement.</p>
+                                <div class="tp-banner-search">
+                                    <form action="#">
+                                       <div class="tp-banner-form d-md-flex align-items-center justify-content-around">
+                                          <div class="tp-banner-input">
+                                             <input type="text" placeholder="https:// yoursite.com">
+                                             <span>
+                                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                   <path d="M9.36754 7.63202C11.286 9.55045 11.286 12.654 9.36754 14.5639C7.44912 16.4738 4.34553 16.4824 2.43562 14.5639C0.525724 12.6455 0.517198 9.54192 2.43562 7.63202" stroke="#6F7276" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                   <path d="M7.26078 9.73795C5.26561 7.74279 5.26561 4.50277 7.26078 2.49908C9.25594 0.495393 12.496 0.50392 14.4996 2.49908C16.5033 4.49425 16.4948 7.73426 14.4996 9.73795" stroke="#6F7276" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                             </span>
+                                          </div>
+                                          <div class="tp-banner-input">
+                                             <input type="email" placeholder="youremail@domain.com">
+                                             <span>
+                                                <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                   <path d="M13 14.3333H5C2.6 14.3333 1 13.1569 1 10.4118V4.92157C1 2.17647 2.6 1 5 1H13C15.4 1 17 2.17647 17 4.92157V10.4118C17 13.1569 15.4 14.3333 13 14.3333Z" stroke="#6F7276" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                   <path d="M13 5.3139L10.496 7.27469C9.672 7.91783 8.32 7.91783 7.496 7.27469L5 5.3139" stroke="#6F7276" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                             </span>
+                                          </div>
+                                          <div class="tp-banner-search-btn-wrap">
+                                             <button class="tp-banner-search-btn">Analyze Now</button>
+                                          </div>
+                                       </div>
+                                    </form>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tp-banner-shape">
+                    <div class="tp-banner-shape-1 p-absolute"><img src="assets/img/shape/h1-banner-line.png" alt=""></div>
+                    <div class="tp-banner-shape-2 p-absolute"><img src="assets/img/shape/h1-banner-tree.png" alt=""></div>
+                    <div class="tp-banner-shape-3 p-absolute"><img src="assets/img/shape/h1-banner-pose.png" alt=""></div>
+                    <div class="tp-banner-shape-4 p-absolute"><img src="assets/img/shape/h1-banner-target.png" alt=""></div>
+                    <div class="tp-banner-shape-5 p-absolute"><img src="assets/img/shape/h1-banner-announce.png" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <!-- banner-area-end -->
+
+        <!-- process-area-start -->
+        <section class="tp-process-area p-relative pt-120 pb-120">
+            <div class="container">
+                <div class="row">
+                    <div class="tp-section-content-wrapper text-center mb-30">
+                        <div class="tp-banner-sub-title">
+                            <span>Welcome To</span>
+                            <i>
+                                <svg width="110" height="35" viewBox="0 0 110 35" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="110" height="34.1" fill="url(#pattern0_2214_119)" fill-opacity="0.08"/>
+                                <defs>
+                                <pattern patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_2214_119" transform="translate(-0.06) scale(0.00611111 0.0197133)"/>
+                                </pattern>
+                                <image width="180" height="50" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAyCAYAAAD1JPH3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMS1jMDAwIDc5LmVkYTJiM2ZhYywgMjAyMS8xMS8xNy0xNzoyMzoxOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUMyMzkwQTczMTM3MTFFRDg3NUZBOUZCRDk1MThFMTMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUMyMzkwQTYzMTM3MTFFRDg3NUZBOUZCRDk1MThFMTMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIzLjEgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjFBQkIwMjIzMTA2MTFFREEzRkNBQzVFOTRFRTVERTgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjFBQkIwMjMzMTA2MTFFREEzRkNBQzVFOTRFRTVERTgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5lgZ3iAAAB2ElEQVR42uzd7U3CUBiA0Wr4DxvQDWQE4gS6gSO6ibhB2aBMoCG5ja83pVRaSSnnJE2/MII+t7386sPz21dxQ1ZpKdNSpPUynItL/nNd6rSc2t6n/Sot+TYTsJhgrJsU6TqLt7zS779EE3ad1vuwvwuDg5kF3QQao92E47fq3ICrQ/RN8LsQPBMPOob7lEV8j5o7z6Yj+Cbwzyx+U5orB32MdCvcwcFv0/ZLx5SmubrHAVCZ0lwW9CrEu07rcsC8k/GmNPk8vg7hx2P13K/4fYP+6LhdcjvR5wMgrmP0h5bXxdecmjadu1N0ffFuOxc/zzKcP65fhwQt5nkOgGJu08NH/1cEDYIGQYOgETQIGgQNggZBI2gQNAgaBA2CRtAgaBA0CBoEjaBB0CBoEDQIGkGDoEHQIGgQNIIGQYOgQdAgaAQNE7aY+Ptre7JSn6ct9VWe2UfQvx4XFuPbZ+fz1/5HsGPEHh831mw359bhWH6OCQf9Xvw8v67OQmyLcg6GfJ4Yd769Dvviv+yuXQ0N+tXf8aKpUtUz/rJlvWw5Pmf5RfIQ7vJV0fO55wvtTSL+3R+mQasTd4BlyzRpdeWBEKeL+aC+yt1d0PczDSpH/PJbjfi+RvUtwADssXzgKiX3gwAAAABJRU5ErkJggg=="/>
+                                </defs>
+                                </svg>
+                            </i>
+                        </div>
+                        <h2 class="tp-section-title">Helping others Succeed</h2>
+                    </div>
+                </div>
+                <div class="tp-process-bottom tp-process-bottom-border p-relative pb-50">
+                    <div class="tp-process-shape-four p-absolute">
+                        <img src="assets/img/process/rocket.png" alt="">
+                    </div>
+                    <div class="row justify-content-center text-center text-md-start">
+                        <div class="col-md-3 col-sm-6 col-10">
+                            <div class="tp-process-item p-relative mb-40">
+                                <div class="tp-process-wrapper pt-30">
+                                    <span class="tp-process-count mb-25">1</span>
+                                    <h4 class="tp-process-title">Brainstorming and Creative <br>ideas & Research</h4>
+                                </div>
+                                <div class="tp-process-shape-one">
+                                    <svg width="112" height="15" viewBox="0 0 112 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="line-dash-path" d="M1 8.56464C18.4695 1.84561 64.9267 -6.52437 111 13.7479" stroke="#A6A8B0" stroke-dasharray="4 5"></path>
+                                        </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-10">
+                            <div class="tp-process-item p-relative mb-40 ml-20">
+                                <div class="tp-process-wrapper pt-30 tp-process-two">
+                                    <span class="tp-process-count mb-25">2</span>
+                                    <h4 class="tp-process-title">Brainstorming and Creative <br>ideas & Research</h4>
+                                </div>
+                                <div class="tp-process-shape-two">
+                                    <svg width="112" height="15" viewBox="0 0 112 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="line-dash-path" d="M1 6.43536C18.4695 13.1544 64.9267 21.5244 111 1.25212" stroke="#A6A8B0" stroke-dasharray="4 5"></path>
+                                        </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-10">
+                            <div class="tp-process-item p-relative mb-40 ml-20">
+                                <div class="tp-process-wrapper pt-30 tp-process-three">
+                                    <span class="tp-process-count mb-25">3</span>
+                                    <h4 class="tp-process-title">Brainstorming and Creative <br>ideas & Research</h4>
+                                </div>
+                                <div class="tp-process-shape-three">
+                                    <svg width="112" height="15" viewBox="0 0 112 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="line-dash-path" d="M1 8.56464C18.4695 1.84561 64.9267 -6.52437 111 13.7479" stroke="#A6A8B0" stroke-dasharray="4 5"></path>
+                                        </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-10">
+                            <div class="tp-process-item p-relative mb-40 ml-20">
+                                <div class="tp-process-wrapper pt-30 tp-process-four">
+                                    <span class="tp-process-count mb-25">4</span>
+                                    <h4 class="tp-process-title">Brainstorming and Creative <br>ideas & Research</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- process-area-end -->
+
+        <!-- analysis-area-start -->
+        <section class="tp-analysis-area pb-90" id="tp-analysis-seo-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="tp-section-content-wrapper text-center mb-40">
+                        <div class="tp-banner-sub-title">
+                            <span> SEO Agency of the Year</span>
+                            <i>
+                                <svg width="200" height="43" viewBox="0 0 200 43" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="200" height="42.2222" fill="url(#pattern0_2214_227)" fill-opacity="0.06"/>
+                                    <defs>
+                                    <pattern id="pattern0_2214_227" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_2214_227" transform="matrix(0.00612903 0 0 0.02 -0.0596774 0)"/>
+                                    </pattern>
+                                    <image id="image0_2214_227" width="180" height="50" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAyCAYAAAD1JPH3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMS1jMDAwIDc5LmVkYTJiM2ZhYywgMjAyMS8xMS8xNy0xNzoyMzoxOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUMyMzkwQTczMTM3MTFFRDg3NUZBOUZCRDk1MThFMTMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUMyMzkwQTYzMTM3MTFFRDg3NUZBOUZCRDk1MThFMTMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIzLjEgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjFBQkIwMjIzMTA2MTFFREEzRkNBQzVFOTRFRTVERTgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjFBQkIwMjMzMTA2MTFFREEzRkNBQzVFOTRFRTVERTgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5lgZ3iAAAB2ElEQVR42uzd7U3CUBiA0Wr4DxvQDWQE4gS6gSO6ibhB2aBMoCG5ja83pVRaSSnnJE2/MII+t7386sPz21dxQ1ZpKdNSpPUynItL/nNd6rSc2t6n/Sot+TYTsJhgrJsU6TqLt7zS779EE3ad1vuwvwuDg5kF3QQao92E47fq3ICrQ/RN8LsQPBMPOob7lEV8j5o7z6Yj+Cbwzyx+U5orB32MdCvcwcFv0/ZLx5SmubrHAVCZ0lwW9CrEu07rcsC8k/GmNPk8vg7hx2P13K/4fYP+6LhdcjvR5wMgrmP0h5bXxdecmjadu1N0ffFuOxc/zzKcP65fhwQt5nkOgGJu08NH/1cEDYIGQYOgETQIGgQNggZBI2gQNAgaBA2CRtAgaBA0CBoEjaBB0CBoEDQIGkGDoEHQIGgQNIIGQYOgQdAgaAQNE7aY+Ptre7JSn6ct9VWe2UfQvx4XFuPbZ+fz1/5HsGPEHh831mw359bhWH6OCQf9Xvw8v67OQmyLcg6GfJ4Yd769Dvviv+yuXQ0N+tXf8aKpUtUz/rJlvWw5Pmf5RfIQ7vJV0fO55wvtTSL+3R+mQasTd4BlyzRpdeWBEKeL+aC+yt1d0PczDSpH/PJbjfi+RvUtwADssXzgKiX3gwAAAABJRU5ErkJggg=="/>
+                                    </defs>
+                                    </svg>
+                                    
+                            </i>
+                        </div>
+                        <h2 class="tp-section-title mb-25"> <span>Expect great things</span> <br>
+                            from your SEO Agency
+                        </h2>
+                        <p>Believe it because you've seen it. Here are real numbers from just one <br>
+                            successful Victorious partner.</p>
+                    </div>
+                </div>
+                <div class="tp-analysis-chart p-relative mb-70">
+                    <div class="row justify-content-center">
+                        <div class="tp-analysis-shape">
+                            <div class="tp-analysis-shape-one"><img src="assets/img/analysis/analysis-chart-1.png" alt=""></div>
+                            <div class="tp-analysis-shape-two"><img src="assets/img/analysis/analysis-chart-2.png" alt=""></div>
+                        </div>
+                        <div class="col-xl-8">
+                            <div class="tp-analysis-switch-wrap d-flex align-items-center justify-content-center">
+                                <label>BEFORE SEO</label>
+                                <div class="tp-analysis-switch"></div>
+                                <label>AFTER SEO</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="tp-analysis-seo">
+                            <div class="tp-analysis-monthly" id="monthly-analysis">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 col-6">
+                                        <div class="tp-analysis-category mb-30">
+                                            <div class="tp-analysis-item">
+                                                <h3 class="tp-analysis-counter"><span>10265</span></h3>
+                                                <p>Annual Organic Traffic</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-6">
+                                        <div class="tp-analysis-category mb-30">
+                                            <div class="tp-analysis-item">
+                                                <h3 class="tp-analysis-counter"><span>8426</span></h3>
+                                                <p>Ranking Keywords</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-6">
+                                        <div class="tp-analysis-category mb-30">
+                                            <div class="tp-analysis-item">
+                                                <h3 class="tp-analysis-counter"><span>726%</span></h3>
+                                                <p>Return on Investment</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tp-analysis-hourly" id="hourly-analysis">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 col-6">
+                                        <div class="tp-analysis-category mb-30">
+                                            <div class="tp-analysis-item">
+                                                <h3 class="tp-analysis-counter"><span>726</span></h3>
+                                                <p>Annual Organic Traffic</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-6">
+                                        <div class="tp-analysis-category mb-30">
+                                            <div class="tp-analysis-item">
+                                                <h3 class="tp-analysis-counter"><span>1026</span></h3>
+                                                <p>Ranking Keywords</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-6">
+                                        <div class="tp-analysis-category mb-30">
+                                            <div class="tp-analysis-item">
+                                                <h3 class="tp-analysis-counter"><span>488%</span></h3>
+                                                <p>Return on Investment</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- analysis-area-end -->
+
+        <!-- case-area-start -->
+        <section class="tp-case-area fix pb-140">
+            <div class="container">
+                <div class="row align-items-end justify-content-sm-between justify-content-center">
+                    <div class="col-md-8 col-sm-9 col-8">
+                        <div class="tp-section-content-wrapper mb-40">
+                            <div class="tp-banner-sub-title">
+                                <span>Featured Projects</span>
+                                <i>
+                                    <svg width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <rect width="150" height="40" fill="url(#pattern0_2214_233)" fill-opacity="0.1"/>
+                                        <defs>
+                                        <pattern id="pattern0_2214_233" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_2214_233" transform="matrix(0.00611611 0 0 0.0203396 -0.0584971 0)"/>
+                                        </pattern>
+                                        <image id="image0_2214_233" width="180" height="50" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAyCAYAAAD1JPH3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMS1jMDAwIDc5LmVkYTJiM2ZhYywgMjAyMS8xMS8xNy0xNzoyMzoxOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUMyMzkwQTczMTM3MTFFRDg3NUZBOUZCRDk1MThFMTMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUMyMzkwQTYzMTM3MTFFRDg3NUZBOUZCRDk1MThFMTMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIzLjEgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjFBQkIwMjIzMTA2MTFFREEzRkNBQzVFOTRFRTVERTgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjFBQkIwMjMzMTA2MTFFREEzRkNBQzVFOTRFRTVERTgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5lgZ3iAAAB2ElEQVR42uzd7U3CUBiA0Wr4DxvQDWQE4gS6gSO6ibhB2aBMoCG5ja83pVRaSSnnJE2/MII+t7386sPz21dxQ1ZpKdNSpPUynItL/nNd6rSc2t6n/Sot+TYTsJhgrJsU6TqLt7zS779EE3ad1vuwvwuDg5kF3QQao92E47fq3ICrQ/RN8LsQPBMPOob7lEV8j5o7z6Yj+Cbwzyx+U5orB32MdCvcwcFv0/ZLx5SmubrHAVCZ0lwW9CrEu07rcsC8k/GmNPk8vg7hx2P13K/4fYP+6LhdcjvR5wMgrmP0h5bXxdecmjadu1N0ffFuOxc/zzKcP65fhwQt5nkOgGJu08NH/1cEDYIGQYOgETQIGgQNggZBI2gQNAgaBA2CRtAgaBA0CBoEjaBB0CBoEDQIGkGDoEHQIGgQNIIGQYOgQdAgaAQNE7aY+Ptre7JSn6ct9VWe2UfQvx4XFuPbZ+fz1/5HsGPEHh831mw359bhWH6OCQf9Xvw8v67OQmyLcg6GfJ4Yd769Dvviv+yuXQ0N+tXf8aKpUtUz/rJlvWw5Pmf5RfIQ7vJV0fO55wvtTSL+3R+mQasTd4BlyzRpdeWBEKeL+aC+yt1d0PczDSpH/PJbjfi+RvUtwADssXzgKiX3gwAAAABJRU5ErkJggg=="/>
+                                        </defs>
+                                    </svg>
+                                </i>
+                            </div>
+                            <h2 class="tp-section-title mb-25">Our Case Studies</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-3 col-8">
+                        <div class="tp-case-arrow d-flex align-items-center justify-content-sm-end justify-content-center p-relative mb-40">
+                            <div class="tp-case-arrow-btn tp-case-arrow-btn-prev">
+                                <span>
+                                    <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.06982 1L1.06982 6L6.06982 11" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M27 6.07007H1" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="tp-case-arrow-btn tp-case-arrow-btn-next">
+                                <span>
+                                    <svg width="29" height="12" viewBox="0 0 29 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23.0698 11L28.0698 6L23.0698 1" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M27 6.07007H1" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row tp-case-space">
+                    <div class="tp-case-item-wrapper">
+                        <div class="swiper tp-case-slider-active">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <div class="tp-case-item">
+                                    <div class="tp-case-thumb">
+                                        <img src="assets/img/case/h1-case-1.jpg" alt="">
+                                    </div>
+                                    <div class="tp-case-content">
+                                        <div class="tp-case-tag mb-10">
+                                            <span>SEO Analysis</span>
+                                            <span>Marketing</span>
+                                        </div>
+                                        <a href=""><h4 class="tp-case-title">Online Media Management</h4></a>
+                                    </div>
+                                </div>
+    
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="tp-case-item">
+                                    <div class="tp-case-thumb">
+                                        <img src="assets/img/case/h1-case-2.jpg" alt="">
+                                    </div>
+                                    <div class="tp-case-content">
+                                        <div class="tp-case-tag mb-10">
+                                            <span>SEO Analysis</span>
+                                            <span>Marketing</span>
+                                        </div>
+                                        <a href=""><h4 class="tp-case-title">Twice Profit Than Before</h4></a>
+                                    </div>
+                                </div>
+    
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="tp-case-item">
+                                    <div class="tp-case-thumb">
+                                        <img src="assets/img/case/h1-case-3.jpg" alt="">
+                                    </div>
+                                    <div class="tp-case-content">
+                                        <div class="tp-case-tag mb-10">
+                                            <span>SEO Analysis</span>
+                                            <span>Marketing</span>
+                                        </div>
+                                        <a href=""><h4 class="tp-case-title">Social Engagement</h4></a>
+                                    </div>
+                                </div>
+    
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="tp-case-item">
+                                    <div class="tp-case-thumb">
+                                        <img src="assets/img/case/h1-case-1.jpg" alt="">
+                                    </div>
+                                    <div class="tp-case-content">
+                                        <div class="tp-case-tag mb-10">
+                                            <span>SEO Analysis</span>
+                                            <span>Marketing</span>
+                                        </div>
+                                        <a href=""><h4 class="tp-case-title">Online Media Management</h4></a>
+                                    </div>
+                                </div>
+    
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="tp-case-item">
+                                    <div class="tp-case-thumb">
+                                        <img src="assets/img/case/h1-case-2.jpg" alt="">
+                                    </div>
+                                    <div class="tp-case-content">
+                                        <div class="tp-case-tag mb-10">
+                                            <span>SEO Analysis</span>
+                                            <span>Marketing</span>
+                                        </div>
+                                        <a href=""><h4 class="tp-case-title">Twice Profit Than Before</h4></a>
+                                    </div>
+                                </div>
+    
+                              </div>
+                            </div>
+                          </div>
+                        <!-- <div class="col-xl-6">
+                            <div class="tp-case-item">
+                                <div class="tp-case-thumb">
+                                    <img src="assets/img/case/h1-case-1.jpg" alt="">
+                                </div>
+                                <div class="tp-case-content">
+                                    <div class="tp-case-tag mb-10">
+                                        <span>SEO Analysis</span>
+                                        <span>Marketing</span>
+                                    </div>
+                                    <a href=""><h4 class="tp-case-title">Online Media Management</h4></a>
+                                </div>
+                            </div>
+
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- case-area-end -->
+
+        <!-- service-area-start -->
+         <section class="tp-service-area fix pb-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="tp-section-content-wrapper text-center mb-60">
+                            <div class="tp-banner-sub-title">
+                                <span>Our Services</span>
+                                <i>
+                                    <svg width="126" height="37" viewBox="0 0 126 37" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <rect width="126" height="37" fill="url(#pattern0_2214_285)" fill-opacity="0.08"/>
+                                        <defs>
+                                        <pattern id="pattern0_2214_285" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_2214_285" transform="matrix(0.00603175 0 0 0.0205405 -0.0507936 0)"/>
+                                        </pattern>
+                                        <image id="image0_2214_285" width="180" height="50" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAyCAYAAAD1JPH3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMS1jMDAwIDc5LmVkYTJiM2ZhYywgMjAyMS8xMS8xNy0xNzoyMzoxOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUMyMzkwQTczMTM3MTFFRDg3NUZBOUZCRDk1MThFMTMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUMyMzkwQTYzMTM3MTFFRDg3NUZBOUZCRDk1MThFMTMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIzLjEgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjFBQkIwMjIzMTA2MTFFREEzRkNBQzVFOTRFRTVERTgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjFBQkIwMjMzMTA2MTFFREEzRkNBQzVFOTRFRTVERTgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5lgZ3iAAAB2ElEQVR42uzd7U3CUBiA0Wr4DxvQDWQE4gS6gSO6ibhB2aBMoCG5ja83pVRaSSnnJE2/MII+t7386sPz21dxQ1ZpKdNSpPUynItL/nNd6rSc2t6n/Sot+TYTsJhgrJsU6TqLt7zS779EE3ad1vuwvwuDg5kF3QQao92E47fq3ICrQ/RN8LsQPBMPOob7lEV8j5o7z6Yj+Cbwzyx+U5orB32MdCvcwcFv0/ZLx5SmubrHAVCZ0lwW9CrEu07rcsC8k/GmNPk8vg7hx2P13K/4fYP+6LhdcjvR5wMgrmP0h5bXxdecmjadu1N0ffFuOxc/zzKcP65fhwQt5nkOgGJu08NH/1cEDYIGQYOgETQIGgQNggZBI2gQNAgaBA2CRtAgaBA0CBoEjaBB0CBoEDQIGkGDoEHQIGgQNIIGQYOgQdAgaAQNE7aY+Ptre7JSn6ct9VWe2UfQvx4XFuPbZ+fz1/5HsGPEHh831mw359bhWH6OCQf9Xvw8v67OQmyLcg6GfJ4Yd769Dvviv+yuXQ0N+tXf8aKpUtUz/rJlvWw5Pmf5RfIQ7vJV0fO55wvtTSL+3R+mQasTd4BlyzRpdeWBEKeL+aC+yt1d0PczDSpH/PJbjfi+RvUtwADssXzgKiX3gwAAAABJRU5ErkJggg=="/>
+                                        </defs>
+                                    </svg>                                        
+                                </i>
+                            </div>
+                            <h2 class="tp-section-title mb-25"> Discover our top Services </h2>
+                            <p>Our strategy includes consistently evolving, to ensure we’re producing <br>
+                                exceptional SEO for business.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tp-service-list">
+                    <ul>
+                        <li>
+                            <div class="tp-service-item">
+                                <div class="tp-service-icon mb-30">
+                                    <img src="assets/img/service/h1-s-icon-1.png" alt="">
+                                </div>
+                                <div class="tp-service-content">
+                                    <span>Social Marketing</span>
+                                    <a href=""><h4 class="tp-service-title">Instant account activation <br> if instant access.</h4></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tp-service-item">
+                                <div class="tp-service-icon tp-service-icon-two mb-30">
+                                    <img src="assets/img/service/h1-s-icon-2.png" alt="">
+                                </div>
+                                <div class="tp-service-content">
+                                    <span>SEO Optimization</span>
+                                    <a href=""><h4 class="tp-service-title">Instant account activation <br> if instant access.</h4></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tp-service-item">
+                                <div class="tp-service-icon tp-service-icon-three mb-30">
+                                    <img src="assets/img/service/h1-s-icon-3.png" alt="">
+                                </div>
+                                <div class="tp-service-content">
+                                    <span>One Page SEO</span>
+                                    <a href=""><h4 class="tp-service-title">Instant account activation <br> if instant access.</h4></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tp-service-item">
+                                <div class="tp-service-icon tp-service-icon-four mb-30">
+                                    <img src="assets/img/service/h1-s-icon-4.png" alt="">
+                                </div>
+                                <div class="tp-service-content">
+                                    <span>Content Marketing</span>
+                                    <a href=""><h4 class="tp-service-title">Instant account activation <br> if instant access.</h4></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tp-service-item">
+                                <div class="tp-service-icon tp-service-icon-five mb-30">
+                                    <img src="assets/img/service/h1-s-icon-5.png" alt="">
+                                </div>
+                                <div class="tp-service-content">
+                                    <span>Email Marketing</span>
+                                    <a href=""><h4 class="tp-service-title">Instant account activation <br> if instant access.</h4></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tp-service-item">
+                                <div class="tp-service-icon tp-service-icon-six mb-30">
+                                    <img src="assets/img/service/h1-s-icon-6.png" alt="">
+                                </div>
+                                <div class="tp-service-content">
+                                    <span>Keyword Research</span>
+                                    <a href=""><h4 class="tp-service-title">Instant account activation <br> if instant access.</h4></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+         </section>
+        <!-- service-area-end -->
+
+        <!-- funfact-area-start -->
+         <section class="tp-funfact-area fix pb-120">
+            <div class="container">
+                <div class="tp-funfact-bg p-relative tp-funfact-space pt-90 pb-100 fix" data-background="assets/img/funfact/funfact-bg.png">
+                    <div class="row justify-content-center">
+                       <div class="col-md-12 col-10">
+                        <div class="tp-section-content-wrapper text-center mb-80">
+                            <div class="tp-banner-sub-title">
+                                <span class="tp-text-white"> Selected Projects</span>
+                                <i>
+                                    <svg width="150" height="36" viewBox="0 0 150 36" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <rect x="0.00012207" width="150" height="36" fill="url(#pattern0_2214_391)" fill-opacity="0.1"/>
+                                        <defs>
+                                        <pattern id="pattern0_2214_391" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_2214_391" transform="matrix(0.00603175 0 0 0.0205405 -0.0507936 0)"/>
+                                        </pattern>
+                                        <image id="image0_2214_391" width="180" height="50" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAyCAYAAAD1JPH3AAAAAXNSR0IArs4c6QAAA8JJREFUeF7tnVFO41AMRa9TkIoEIqyA7GA6O2ALs9JZynR2UFZAEB9TCYhHfokhlSrkTqdpXd38pG2cxjk+eXnJjwWJlqcnrTFHfQE0CjSWuthacCuKWgU1FDUEtX33U/v4/atzFbSiaC1EBS2Gzxh+V+CxbANWAqzs8xuwuruS8pnLaRCQ00gDcFlnHRaVoNEK90VSoDFpXeBTyXechwluopv8MOE7PHaKlVRo39ZY3t1JuVC4HJ7ApEKbtJeXaLoZFiapAPcqWLi4hz/dIx1hEN1kd+FVsJR3tNfXsjxSVmd52IMIvSGu4BtMXsXilEfZo1a3n+Isywiv+O3TGk5pdq/K3kI//dFmBjwIxd2dfnAPn9IM60eb6/sI//qKFac0nyDDQvuoiwoPNr8F8GAjb3kI43J0AuN5fBEeKOL7XN6mN68ztOf+EBsS+mWtv6BYHL1qTOC/EfA3NeVh1hZ/m9NPe579QB/b7YcOrT3obkvCL5ivErx8R62z7QOgdqhRbW4rb7B8Gd5k2Vd7a3Uzlx9b84gQevmjGoljDAlMReDmSrYOxrERmkJPVSceJ0iAQgdBMSwHAQqdo07MMkiAQgdBMSwHAQqdo07MMkiAQgdBMSwHAQqdo07MMkiAQgdBMSwHAQqdo07MMkiAQgdBMSwHAQqdo07MMkiAQgdBMSwHAQqdo07MMkiAQgdBMSwHAQqdo07MMkiAQgdBMSwHAQqdo07MMkiAQgdBMSwHAQqdo07MMkiAQgdBMSwHAQqdo07MMkiAQgdBMSwHAQqdo07MMkiAQgdBMSwHAQqdo07MMkiAQgdBMSwHAQqdo07MMkiAQgdBMSwHAQqdo07MMkiAQgdBMSwHAQqdo07MMkiAQgdBMSwHAQqdo07MMkiAQgdBMSwHAQqdo07MMkiAQgdBMSwHgZxCj/pvO+aNPtx7st/ostT38f7surTnf3P3wxKYTOiNdmHjhvCj5u9+quMm8B+nv0Z7Co0kraGo5TRuReatx/xCGFo716VXo6A++xbPh3V0p3/fT+i1/izNHK1/nZSmjqW3nQlp7Xvt87k3dNyFtjUpxRz1BdBsXAQmvjUtVdR2UfCOsAvVIXbom34zl+/b9g61dfuHw3KXIAHv0GsNKU3wSvu1CG6L8FKaUZ59x97xnb10xVU827qzu/wwcEYGTQodFO8Uwmwa5FMgG/krQWNdVcuI7xdAf+vspz/DtslyH08x+460RUY7/lR3dwo9WbWPeyB/JrAsbCq0TzY+zfT/iIyc+xxvl33/AiWjt0Jf7u62AAAAAElFTkSuQmCC"/>
+                                        </defs>
+                                    </svg>                                  
+                                </i>
+                            </div>
+                            <h2 class="tp-section-title mb-25 tp-text-white">We Believe In Our Success</h2>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="tp-funfact-shape">
+                        <div class="tp-funfact-shape-one p-absolute"><img src="assets/img/funfact/funfact-shape-1.png" alt=""></div>
+                        <div class="tp-funfact-shape-two p-absolute"><img src="assets/img/funfact/funfact-shape-2.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="tp-funfact-box-wrapper">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-5 col-lg-6 col-md-10">
+                            <div class="tp-funfact-box mb-40">
+                                <div class="tp-funfact-title">Keywords</div>
+                                <h4 class="tp-funfact-count">4<span>.628.319.632</span></h4>
+                                <div class="tp-funfact-tag">
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.08936 3.33587C1.80795 0.221377 6.48778 0.221377 7.19738 3.33587C7.61956 5.16316 6.46083 6.7114 5.4548 7.67456C4.71825 8.37667 3.55952 8.36767 2.82296 7.67456C1.82592 6.7114 0.667192 5.16316 1.08936 3.33587Z" stroke="currentColor" stroke-width="1.5"/>
+                                        <path d="M12.767 14.1376C13.4856 11.0231 18.1924 11.0231 18.911 14.1376C19.3332 15.9649 18.1744 17.5132 17.1594 18.4763C16.4229 19.1784 15.2552 19.1694 14.5186 18.4763C13.5036 17.5132 12.3449 15.9649 12.767 14.1376Z" stroke="currentColor" stroke-width="1.5"/>
+                                        <path d="M10.0091 3.6958H12.4164C14.0781 3.6958 14.8506 5.75713 13.6021 6.8553L6.42516 13.1473C5.17661 14.2365 5.94909 16.2978 7.60185 16.2978H10.0091" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.15775 4.14587H4.16813" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M15.835 14.9481H15.8454" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                     Countries</span>
+                                     <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.0294 19C15 19 19.0294 14.9706 19.0294 10C19.0294 5.02944 15 1 10.0294 1C5.05886 1 1.02942 5.02944 1.02942 10C1.02942 14.9706 5.05886 19 10.0294 19Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.42956 1.8999H7.32956C5.57456 7.1559 5.57456 12.8439 7.32956 18.0999H6.42956" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12.7295 1.8999C14.4845 7.1559 14.4845 12.8439 12.7295 18.0999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M1.92963 13.6002V12.7002C7.18563 14.4552 12.8736 14.4552 18.1296 12.7002V13.6002" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M1.92963 7.30014C7.18563 5.54514 12.8736 5.54514 18.1296 7.30014" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                            
+                                        28 Languages
+                                     </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-6 col-md-10">
+                            <div class="tp-funfact-box mb-30">
+                                <div class="tp-funfact-title">Search Volume</div>
+                                <h4 class="tp-funfact-count">106,<span>9 Billion</span></h4>
+                                <div class="tp-funfact-tag">
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4909 7.26367H5.50891" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.0001 5.75195V7.26395" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12.2501 7.24561C12.2501 11.1156 9.22612 14.2476 5.50012 14.2476" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.5004 14.2479C12.8804 14.2479 11.4404 13.3839 10.4054 12.0249" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.30012 19H12.7001C17.2001 19 19.0001 17.2 19.0001 12.7V7.3C19.0001 2.8 17.2001 1 12.7001 1H7.30012C2.80012 1 1.00012 2.8 1.00012 7.3V12.7C1.00012 17.2 2.80012 19 7.30012 19Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            
+                                        4+ Billion Keywords</span>
+                                     <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.0001 8.2V12.7C19.0001 17.2 17.2001 19 12.7001 19H7.30012C2.80012 19 1.00012 17.2 1.00012 12.7V7.3C1.00012 2.8 2.80012 1 7.30012 1H11.8001" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M19 8.2H15.4C12.7 8.2 11.8 7.3 11.8 4.6V1L19 8.2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.50012 10.8999H10.9001" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.50012 14.5H9.10012" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            
+                                        36TB Data
+                                     </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+        <!-- funfact-area-end -->
+
+        <!-- choose-area-start -->
+         <section class="tp-choose-area fix pb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-sm-8">
+                        <div class="tp-choose-left fix mb-40 pr-80">
+                            <div class="tp-choose-thumb w-img p-relative">
+                                <img src="assets/img/choose/choose-1.jpg" alt="">
+                                <div class="tp-choose-shape">
+                                    <div class="tp-choose-shape-one p-absolute"><img src="assets/img/choose/choose-border.png" alt=""></div>                                   
+                                    <div class="tp-choose-shape-two p-absolute"><img src="assets/img/choose/choose-skyblue-shape.png" alt=""></div>
+                                    <div class="tp-choose-shape-three p-absolute"><img src="assets/img/choose/choose-green-shape.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-sm-10">
+                        <div class="tp-choose-right">
+                            <div class="tp-section-content-wrapper mb-50">
+                                <div class="tp-banner-sub-title">
+                                    <span>Why Choose us</span>
+                                    <i>
+                                        <svg width="130" height="42" viewBox="0 0 130 42" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <rect y="0.941895" width="130" height="40.9551" fill="url(#pattern0_2214_436)" fill-opacity="0.08"/>
+                                            <defs>
+                                            <pattern id="pattern0_2214_436" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_2214_436" transform="matrix(0.00611916 0 0 0.0198269 -0.0587762 0.0123052)"/>
+                                            </pattern>
+                                            <image id="image0_2214_436" width="180" height="50" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAyCAYAAAD1JPH3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMS1jMDAwIDc5LmVkYTJiM2ZhYywgMjAyMS8xMS8xNy0xNzoyMzoxOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUMyMzkwQTczMTM3MTFFRDg3NUZBOUZCRDk1MThFMTMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUMyMzkwQTYzMTM3MTFFRDg3NUZBOUZCRDk1MThFMTMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIzLjEgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjFBQkIwMjIzMTA2MTFFREEzRkNBQzVFOTRFRTVERTgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjFBQkIwMjMzMTA2MTFFREEzRkNBQzVFOTRFRTVERTgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5lgZ3iAAAB2ElEQVR42uzd7U3CUBiA0Wr4DxvQDWQE4gS6gSO6ibhB2aBMoCG5ja83pVRaSSnnJE2/MII+t7386sPz21dxQ1ZpKdNSpPUynItL/nNd6rSc2t6n/Sot+TYTsJhgrJsU6TqLt7zS779EE3ad1vuwvwuDg5kF3QQao92E47fq3ICrQ/RN8LsQPBMPOob7lEV8j5o7z6Yj+Cbwzyx+U5orB32MdCvcwcFv0/ZLx5SmubrHAVCZ0lwW9CrEu07rcsC8k/GmNPk8vg7hx2P13K/4fYP+6LhdcjvR5wMgrmP0h5bXxdecmjadu1N0ffFuOxc/zzKcP65fhwQt5nkOgGJu08NH/1cEDYIGQYOgETQIGgQNggZBI2gQNAgaBA2CRtAgaBA0CBoEjaBB0CBoEDQIGkGDoEHQIGgQNIIGQYOgQdAgaAQNE7aY+Ptre7JSn6ct9VWe2UfQvx4XFuPbZ+fz1/5HsGPEHh831mw359bhWH6OCQf9Xvw8v67OQmyLcg6GfJ4Yd769Dvviv+yuXQ0N+tXf8aKpUtUz/rJlvWw5Pmf5RfIQ7vJV0fO55wvtTSL+3R+mQasTd4BlyzRpdeWBEKeL+aC+yt1d0PczDSpH/PJbjfi+RvUtwADssXzgKiX3gwAAAABJRU5ErkJggg=="/>
+                                            </defs>
+                                            </svg>
+                                                                                   
+                                    </i>
+                                </div>
+                                <h2 class="tp-section-title mb-10">What makes Us <br>Different from Others</h2>
+                                <p>Migrating your rank tracking tool is like migrating from Google Analytics <br> to another solution. </p>
+                            </div>
+                            <div class="row gx-6">
+                                <div class="col-md-4 col-sm-6 col-10">
+                                    <div class="tp-choose-item mb-30">
+                                            <span class="tp-choose-icon">
+                                                <svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path opacity="0.4" d="M25.1767 29.2366H8.83964C8.1204 29.2366 7.46965 28.7747 7.2299 28.1076L0.105971 8.17897C-0.459149 6.5881 1.35608 5.23672 2.70895 6.21177L9.55888 11.1041C10.4665 11.7541 11.768 11.3607 12.1619 10.3172L15.3985 1.69576C15.9464 0.207533 18.0528 0.207533 18.6008 1.69576L21.8374 10.3172C22.2313 11.3778 23.5156 11.7541 24.4404 11.1041L31.2903 6.21177C32.6603 5.23672 34.4584 6.60521 33.8933 8.17897L26.7694 28.1076C26.5467 28.7747 25.896 29.2366 25.1767 29.2366Z" fill="#39DDB8"/>
+                                                    <path d="M25.5703 34.4023H8.4455C7.74338 34.4023 7.16113 33.8207 7.16113 33.1194C7.16113 32.418 7.74338 31.8364 8.4455 31.8364H25.5703C26.2725 31.8364 26.8547 32.418 26.8547 33.1194C26.8547 33.8207 26.2725 34.4023 25.5703 34.4023Z" fill="#39DDB8"/>
+                                                    <path d="M21.2892 22.0005H12.7267C12.0246 22.0005 11.4424 21.4189 11.4424 20.7175C11.4424 20.0162 12.0246 19.4346 12.7267 19.4346H21.2892C21.9913 19.4346 22.5735 20.0162 22.5735 20.7175C22.5735 21.4189 21.9913 22.0005 21.2892 22.0005Z" fill="#39DDB8"/>
+                                                </svg>
+                                            </span>
+
+                                        <a href=""><h5 class="tp-choose-title">Experts Consulting</h5></a>
+                                        <a class="tp-choose-arrow" href="">
+                                            <svg width="23" height="12" viewBox="0 0 23 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16.9302 1L21.9302 6L16.9302 11" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M1 6.06982H21" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                                
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-10">
+                                    <div class="tp-choose-item mb-30">
+                                            <span class="tp-choose-icon">
+                                                <svg width="29" height="35" viewBox="0 0 29 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path opacity="0.4" d="M15.6999 0.936199C15.0879 0.46072 14.2379 0.46072 13.6259 0.936199C10.3959 3.3985 0.858872 11.4307 0.909872 20.7874C0.909872 28.3611 7.08094 34.5424 14.6799 34.5424C22.2789 34.5424 28.4499 28.3781 28.4499 20.8044C28.4669 11.5835 18.9129 3.41548 15.6999 0.936199Z" fill="#FFA0C9"/>
+                                                    <path d="M28.4161 21.2969C28.3821 22.3327 28.2291 23.3516 27.9571 24.3365L15.9381 30.1781V34.4914C15.5131 34.5254 15.0881 34.5424 14.6631 34.5424C14.2381 34.5424 13.8131 34.5254 13.3881 34.4914V1.10601C13.4731 1.03809 13.5411 0.987143 13.6091 0.936199C14.2381 0.46072 15.088 0.46072 15.7 0.936199C15.768 0.987143 15.8531 1.05507 15.9381 1.12299V10.3609L22.3641 7.23629C22.9251 7.88158 23.452 8.54386 23.979 9.24009C23.911 9.30802 23.843 9.35896 23.758 9.39293L15.9381 13.1968V18.8516L26.631 13.6553C26.648 13.6553 26.6481 13.6383 26.6651 13.6383C27.0391 14.4024 27.3621 15.1836 27.6171 15.9987L15.9381 21.6874V27.3422L27.1921 21.8742L28.4161 21.2969Z" fill="#FFA0C9"/>
+                                                    </svg>
+                                                    
+                                            </span>
+
+                                        <a href=""><h5 class="tp-choose-title">Competitor Analysis</h5></a>
+                                        <a class="tp-choose-arrow" href="">
+                                            <svg width="23" height="12" viewBox="0 0 23 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16.9302 1L21.9302 6L16.9302 11" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M1 6.06982H21" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                                
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-10">
+                                    <div class="tp-choose-item">
+                                            <span class="tp-choose-icon">
+                                                <svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path opacity="0.4" d="M1.2779 28.7662C0.58096 28.7662 0.00301106 28.1889 0.00301106 27.4927V17.8142C-0.0819814 13.2126 1.63487 8.86577 4.83058 5.60563C8.0263 2.36248 12.3099 0.57959 16.9165 0.57959C26.3337 0.57959 34 8.23751 34 17.6444V27.3229C34 28.0191 33.4221 28.5964 32.7251 28.5964C32.0282 28.5964 31.4502 28.0191 31.4502 27.3229V17.6444C31.4502 9.64684 24.9398 3.12657 16.9165 3.12657C12.9899 3.12657 9.35218 4.63778 6.64942 7.38852C3.92966 10.1562 2.48479 13.8409 2.55279 17.7802V27.4757C2.55279 28.1889 1.99183 28.7662 1.2779 28.7662Z" fill="#FFB876"/>
+                                                    <path d="M6.70082 18.2383H6.47984C2.91016 18.2383 0.00341797 21.1418 0.00341797 24.7076V27.8998C0.00341797 31.4656 2.91016 34.3692 6.47984 34.3692H6.70082C10.2705 34.3692 13.1773 31.4656 13.1773 27.8998V24.7076C13.1773 21.1418 10.2705 18.2383 6.70082 18.2383Z" fill="#FFB876"/>
+                                                    <path d="M27.5241 18.2383H27.3031C23.7334 18.2383 20.8267 21.1418 20.8267 24.7076V27.8998C20.8267 31.4656 23.7334 34.3692 27.3031 34.3692H27.5241C31.0938 34.3692 34.0005 31.4656 34.0005 27.8998V24.7076C34.0005 21.1418 31.0938 18.2383 27.5241 18.2383Z" fill="#FFB876"/>
+                                                    </svg>
+                                                    
+                                            </span>
+                                        <a href=""><h5 class="tp-choose-title">Responsive Support</h5></a>
+                                        <a class="tp-choose-arrow" href="">
+                                            <svg width="23" height="12" viewBox="0 0 23 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16.9302 1L21.9302 6L16.9302 11" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M1 6.06982H21" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                                
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+        <!-- choose-area-end -->
+
+        <!-- pricing-area-start -->
+         <section class="tp-pricing-area fix pt-100 pb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="tp-pricing-switching-wrap p-relative mb-40">
+                            <div class="tp-section-content-wrapper mb-20">
+                                <div class="tp-banner-sub-title">
+                                    <span>Our Pricing</span>
+                                    <i>
+                                        <svg width="114" height="37" viewBox="0 0 114 37" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <rect y="-0.000488281" width="114" height="37" fill="url(#pattern0_2214_494)" fill-opacity="0.08"/>
+                                            <defs>
+                                            <pattern id="pattern0_2214_494" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_2214_494" transform="matrix(0.00603175 0 0 0.0205405 -0.0507936 0)"/>
+                                            </pattern>
+                                            <image id="image0_2214_494" width="180" height="50" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAyCAYAAAD1JPH3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMS1jMDAwIDc5LmVkYTJiM2ZhYywgMjAyMS8xMS8xNy0xNzoyMzoxOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUMyMzkwQTczMTM3MTFFRDg3NUZBOUZCRDk1MThFMTMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUMyMzkwQTYzMTM3MTFFRDg3NUZBOUZCRDk1MThFMTMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIzLjEgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjFBQkIwMjIzMTA2MTFFREEzRkNBQzVFOTRFRTVERTgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjFBQkIwMjMzMTA2MTFFREEzRkNBQzVFOTRFRTVERTgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5lgZ3iAAAB2ElEQVR42uzd7U3CUBiA0Wr4DxvQDWQE4gS6gSO6ibhB2aBMoCG5ja83pVRaSSnnJE2/MII+t7386sPz21dxQ1ZpKdNSpPUynItL/nNd6rSc2t6n/Sot+TYTsJhgrJsU6TqLt7zS779EE3ad1vuwvwuDg5kF3QQao92E47fq3ICrQ/RN8LsQPBMPOob7lEV8j5o7z6Yj+Cbwzyx+U5orB32MdCvcwcFv0/ZLx5SmubrHAVCZ0lwW9CrEu07rcsC8k/GmNPk8vg7hx2P13K/4fYP+6LhdcjvR5wMgrmP0h5bXxdecmjadu1N0ffFuOxc/zzKcP65fhwQt5nkOgGJu08NH/1cEDYIGQYOgETQIGgQNggZBI2gQNAgaBA2CRtAgaBA0CBoEjaBB0CBoEDQIGkGDoEHQIGgQNIIGQYOgQdAgaAQNE7aY+Ptre7JSn6ct9VWe2UfQvx4XFuPbZ+fz1/5HsGPEHh831mw359bhWH6OCQf9Xvw8v67OQmyLcg6GfJ4Yd769Dvviv+yuXQ0N+tXf8aKpUtUz/rJlvWw5Pmf5RfIQ7vJV0fO55wvtTSL+3R+mQasTd4BlyzRpdeWBEKeL+aC+yt1d0PczDSpH/PJbjfi+RvUtwADssXzgKiX3gwAAAABJRU5ErkJggg=="/>
+                                            </defs>
+                                        </svg>                              
+                                    </i>
+                                </div>
+                                <h2 class="tp-section-title mb-10">Choose <br> Your Product.</h2>
+                            </div>
+                            <div class="tp-pricing-switch-wrap d-flex align-items-center">
+                                <label class="tp-pricing-pay-monthly" id="tp-pricing-pay-monthly">Pay Monthly</label>
+                                <div class="tp-pricing-switch"></div>
+                                <label class="tp-pricing-pay-yearly" id="tp-pricing-pay-yearly">Pay Yearly</label>
+                            </div>
+                            <div class="tp-pricing-shape-one p-absolute"><img src="assets/img/pricing/Save.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-7 ">
+                        <div class="tp-pricing-list-wrap p-relative pl-40">
+                            <div class="tp-pricing-monthly-items" id="tp-pricing-monthly">
+                                <div class="row">
+                                    <div class="col-md-6 col-10">
+                                        <div class="tp-pricing-item mb-40">
+                                            <div class="tp-pricing-icon mb-30"><img src="assets/img/pricing/icon-1.png" alt=""></div>
+                                            <a href=""><h4 class="tp-pricing-title mb-30">Diamond Pack</h4></a>
+                                            <div class="tp-pricing-list mb-40">
+                                                <ul>
+                                                    <li>Unlimited</li>
+                                                    <li>5gb Hosting</li>
+                                                    <li>Email & Live chat.</li>
+                                                    <li>3 Domain</li>
+                                                </ul>
+                                            </div>
+                                            <div class="tp-pricing-price mb-35">
+                                                <h4 class="tp-pricing-amount">$120.99</h4>
+                                                <p class="tp-pricing-desc">up to 10 user + 1.99 per user</p>
+                                            </div>
+                                            <a href="" class="tp-pricing-btn">Get Started</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-10">
+                                        <div class="tp-pricing-item mb-40">
+                                            <div class="tp-pricing-icon mb-30"><img src="assets/img/pricing/icon-2.png" alt=""></div>
+                                            <a href=""><h4 class="tp-pricing-title mb-30">Gold Plan</h4></a>
+                                            <div class="tp-pricing-list mb-40">
+                                                <ul>
+                                                    <li>Unlimited</li>
+                                                    <li>10gb Hosting</li>
+                                                    <li>Email & Live chat.</li>
+                                                    <li>5 Domain</li>
+                                                </ul>
+                                            </div>
+                                            <div class="tp-pricing-price mb-35">
+                                                <h4 class="tp-pricing-amount">$310.09</h4>
+                                                <p class="tp-pricing-desc">up to 20 user + 6.99 per user</p>
+                                            </div>
+                                            <a href="" class="tp-pricing-btn tp-pricing-btn-2">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tp-pricing-yearly-items" id="tp-pricing-yearly">
+                                <div class="row">
+                                    <div class="col-md-6 col-10">
+                                        <div class="tp-pricing-item mb-40">
+                                            <div class="tp-pricing-icon mb-30"><img src="assets/img/pricing/icon-1.png" alt=""></div>
+                                            <a href=""><h4 class="tp-pricing-title mb-30">Diamond Pack</h4></a>
+                                            <div class="tp-pricing-list mb-40">
+                                                <ul>
+                                                    <li>Unlimited</li>
+                                                    <li>12gb Hosting</li>
+                                                    <li>Email & Live chat.</li>
+                                                    <li>6 Domain</li>
+                                                </ul>
+                                            </div>
+                                            <div class="tp-pricing-price mb-35">
+                                                <h4 class="tp-pricing-amount">$124.50</h4>
+                                                <p class="tp-pricing-desc">up to 30 user + 3.99 per user</p>
+                                            </div>
+                                            <a href="" class="tp-pricing-btn">Get Started</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-10">
+                                        <div class="tp-pricing-item mb-40">
+                                            <div class="tp-pricing-icon mb-30"><img src="assets/img/pricing/icon-2.png" alt=""></div>
+                                            <a href=""><h4 class="tp-pricing-title mb-30">Gold Plan</h4></a>
+                                            <div class="tp-pricing-list mb-40">
+                                                <ul>
+                                                    <li>Unlimited</li>
+                                                    <li>15gb Hosting</li>
+                                                    <li>Email & Live chat.</li>
+                                                    <li>12 Domain</li>
+                                                </ul>
+                                            </div>
+                                            <div class="tp-pricing-price mb-35">
+                                                <h4 class="tp-pricing-amount">$1190.64</h4>
+                                                <p class="tp-pricing-desc">up to 10 user + 9.99 per user</p>
+                                            </div>
+                                            <a href="" class="tp-pricing-btn tp-pricing-btn-2">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tp-pricing-shape-two p-absolute"><img src="assets/img/pricing/triangle.png" alt=""></div>
+                            <div class="tp-pricing-shape-three p-absolute"><img src="assets/img/pricing/emoji.png" alt=""></div>
+                            <div class="tp-pricing-shape-four p-absolute"><img src="assets/img/pricing/bg-shape.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+        <!-- pricing-area-end -->
+
+        <!-- clients-area-start -->
+        <section class="tp-clients-area fix pb-120">
+            <div class="tp-clients-bg tp-clients-height include-bg pt-120" data-background="assets/img/clients/clients-logo-bg.png">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="tp-section-content-wrapper text-center mb-20">
+                            <div class="tp-banner-sub-title">
+                                <span>Integrates with your tools</span>
+                                <i>
+                                    <svg width="210" height="41" viewBox="0 0 210 41" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <rect width="210" height="40.2456" fill="url(#pattern0_2214_570)" fill-opacity="0.08"/>
+                                        <defs>
+                                        <pattern id="pattern0_2214_570" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_2214_570" transform="matrix(0.00603175 0 0 0.0205405 -0.0507936 0)"/>
+                                        </pattern>
+                                        <image id="image0_2214_570" width="180" height="50" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAyCAYAAAD1JPH3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMS1jMDAwIDc5LmVkYTJiM2ZhYywgMjAyMS8xMS8xNy0xNzoyMzoxOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUMyMzkwQTczMTM3MTFFRDg3NUZBOUZCRDk1MThFMTMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUMyMzkwQTYzMTM3MTFFRDg3NUZBOUZCRDk1MThFMTMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIzLjEgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjFBQkIwMjIzMTA2MTFFREEzRkNBQzVFOTRFRTVERTgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjFBQkIwMjMzMTA2MTFFREEzRkNBQzVFOTRFRTVERTgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5lgZ3iAAAB2ElEQVR42uzd7U3CUBiA0Wr4DxvQDWQE4gS6gSO6ibhB2aBMoCG5ja83pVRaSSnnJE2/MII+t7386sPz21dxQ1ZpKdNSpPUynItL/nNd6rSc2t6n/Sot+TYTsJhgrJsU6TqLt7zS779EE3ad1vuwvwuDg5kF3QQao92E47fq3ICrQ/RN8LsQPBMPOob7lEV8j5o7z6Yj+Cbwzyx+U5orB32MdCvcwcFv0/ZLx5SmubrHAVCZ0lwW9CrEu07rcsC8k/GmNPk8vg7hx2P13K/4fYP+6LhdcjvR5wMgrmP0h5bXxdecmjadu1N0ffFuOxc/zzKcP65fhwQt5nkOgGJu08NH/1cEDYIGQYOgETQIGgQNggZBI2gQNAgaBA2CRtAgaBA0CBoEjaBB0CBoEDQIGkGDoEHQIGgQNIIGQYOgQdAgaAQNE7aY+Ptre7JSn6ct9VWe2UfQvx4XFuPbZ+fz1/5HsGPEHh831mw359bhWH6OCQf9Xvw8v67OQmyLcg6GfJ4Yd769Dvviv+yuXQ0N+tXf8aKpUtUz/rJlvWw5Pmf5RfIQ7vJV0fO55wvtTSL+3R+mQasTd4BlyzRpdeWBEKeL+aC+yt1d0PczDSpH/PJbjfi+RvUtwADssXzgKiX3gwAAAABJRU5ErkJggg=="/>
+                                        </defs>
+                                    </svg>
+                                                                    
+                                </i>
+                            </div>
+                            <h2 class="tp-section-title mb-10">We are Trusted by Our <br>Global Clients</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- clients-area-end -->
+
+        <!-- testimonial-area-start -->
+        <section class="tp-testimonial-area fix pb-120">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8">
+                        <div class="tp-testimonial-top-wrapper text-center mb-60">
+                            <div class="tp-testimonial-top-thumb mb-15">
+                                <img src="assets/img/testimonial/testimonial-top-thumb.png" alt="">
+                            </div>
+                            <div class="tp-section-content-wrapper">
+                                <h2 class="tp-section-title mb-10">Client love us & we love them</h2>
+                                <p>Trusted by over 4,000 clients worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row tp-testimonial-space">
+                    <div class="swiper tp-testimonial-slider-active p-relative pb-30">
+                        <div class="tp-testimonial-item-bg"></div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                            <div class="tp-testimonial-item">
+                                <div class="tp-testimonial-item-box d-sm-flex align-items-center text-center text-sm-start">
+                                    <div class="tp-testimonial-thumb mr-40">
+                                        <img src="assets/img/testimonial/test-author-1.png" alt="">
+                                    </div>
+                                    <div class="tp-testimonial-content-wrapper">
+                                        <span class="tp-testimonial-qoute">
+                                            <svg width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M24.2289 29.0379C24.7654 29.0379 25.8383 28.0753 27.4476 26.1502C29.0569 24.332 30.559 22.2465 31.9537 19.8935C33.2412 17.5406 33.8849 15.455 33.8849 13.6368C33.8849 13.1021 33.7776 12.5139 33.563 11.8721C33.3485 12.6208 32.8657 13.2625 32.1147 13.7973C31.2563 14.439 30.0762 14.7598 28.5741 14.7598C26.3211 14.7598 24.6581 14.1181 23.5852 12.8347C22.405 11.6582 21.8149 10.1609 21.8149 8.34273C21.8149 6.20369 22.6732 4.27856 24.3899 2.56734C25.9992 0.856103 28.1986 0.000488217 30.9881 0.000488217C33.4558 0.000488217 35.4942 0.695676 37.1036 2.08605C38.6056 3.47643 39.5176 5.13418 39.8394 7.05931C39.9467 7.59407 40.0004 8.44969 40.0004 9.62616C40.0004 13.6903 38.6593 17.5406 35.977 21.177C33.2948 24.9203 29.7007 27.8614 25.1945 30.0005L24.2289 29.0379ZM2.98579 29.0379C3.52223 29.0379 4.59512 28.0753 6.20445 26.1502C7.81377 24.332 9.31581 22.2465 10.7106 19.8935C11.998 17.5406 12.6418 15.455 12.6418 13.6368C12.6418 13.1021 12.5345 12.5139 12.3199 11.8721C12.1053 12.6208 11.6225 13.2625 10.8715 13.7973C10.0132 14.439 8.83301 14.7598 7.33097 14.7598C5.07791 14.7598 3.41494 14.1181 2.34205 12.8347C1.16188 11.6582 0.571791 10.1609 0.571791 8.34273C0.571791 6.20369 1.4301 4.27856 3.14672 2.56734C4.75605 0.856103 6.95546 0.000488217 9.74497 0.000488217C12.2126 0.000488217 14.2511 0.695676 15.8604 2.08605C17.3625 3.47643 18.2744 5.13418 18.5963 7.05931C18.7036 7.59407 18.7572 8.44969 18.7572 9.62616C18.7572 13.6903 17.4161 17.5406 14.7339 21.177C12.0517 24.9203 8.4575 27.8614 3.95138 30.0005L2.98579 29.0379Z" fill="currentColor"/>
+                                            </svg>                                    
+                                        </span>
+                                        <p class="tp-testimonial-desc mb-30">
+                                            We help our clients succeed by creating <br> brand identities, digital experiences, material <br> that communicate clearly,
+                                            achieve marketing goals!
+                                        </p>
+                                        <div class="tp-testimonial-author-info">
+                                            <h5 class="tp-testimonial-author-title">Nathalie Grossman</h5>
+                                            <span class="tp-testimonial-author-desig">CEO of Advisor Fuel</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="swiper-slide">
+                            <div class="tp-testimonial-item">
+                                <div class="tp-testimonial-item-box d-sm-flex align-items-center text-center text-sm-start">
+                                    <div class="tp-testimonial-thumb mr-40">
+                                        <img src="assets/img/testimonial/test-author-2.png" alt="">
+                                    </div>
+                                    <div class="tp-testimonial-content-wrapper">
+                                        <span class="tp-testimonial-qoute">
+                                            <svg width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M24.2289 29.0379C24.7654 29.0379 25.8383 28.0753 27.4476 26.1502C29.0569 24.332 30.559 22.2465 31.9537 19.8935C33.2412 17.5406 33.8849 15.455 33.8849 13.6368C33.8849 13.1021 33.7776 12.5139 33.563 11.8721C33.3485 12.6208 32.8657 13.2625 32.1147 13.7973C31.2563 14.439 30.0762 14.7598 28.5741 14.7598C26.3211 14.7598 24.6581 14.1181 23.5852 12.8347C22.405 11.6582 21.8149 10.1609 21.8149 8.34273C21.8149 6.20369 22.6732 4.27856 24.3899 2.56734C25.9992 0.856103 28.1986 0.000488217 30.9881 0.000488217C33.4558 0.000488217 35.4942 0.695676 37.1036 2.08605C38.6056 3.47643 39.5176 5.13418 39.8394 7.05931C39.9467 7.59407 40.0004 8.44969 40.0004 9.62616C40.0004 13.6903 38.6593 17.5406 35.977 21.177C33.2948 24.9203 29.7007 27.8614 25.1945 30.0005L24.2289 29.0379ZM2.98579 29.0379C3.52223 29.0379 4.59512 28.0753 6.20445 26.1502C7.81377 24.332 9.31581 22.2465 10.7106 19.8935C11.998 17.5406 12.6418 15.455 12.6418 13.6368C12.6418 13.1021 12.5345 12.5139 12.3199 11.8721C12.1053 12.6208 11.6225 13.2625 10.8715 13.7973C10.0132 14.439 8.83301 14.7598 7.33097 14.7598C5.07791 14.7598 3.41494 14.1181 2.34205 12.8347C1.16188 11.6582 0.571791 10.1609 0.571791 8.34273C0.571791 6.20369 1.4301 4.27856 3.14672 2.56734C4.75605 0.856103 6.95546 0.000488217 9.74497 0.000488217C12.2126 0.000488217 14.2511 0.695676 15.8604 2.08605C17.3625 3.47643 18.2744 5.13418 18.5963 7.05931C18.7036 7.59407 18.7572 8.44969 18.7572 9.62616C18.7572 13.6903 17.4161 17.5406 14.7339 21.177C12.0517 24.9203 8.4575 27.8614 3.95138 30.0005L2.98579 29.0379Z" fill="currentColor"/>
+                                            </svg>                                    
+                                        </span>
+                                        <p class="tp-testimonial-desc mb-30">
+                                            We help our clients succeed by creating <br> brand identities, digital experiences, material <br> that communicate clearly,
+                                            achieve marketing goals!
+                                        </p>
+                                        <div class="tp-testimonial-author-info">
+                                            <h5 class="tp-testimonial-author-title">Nathalie Grossman</h5>
+                                            <span class="tp-testimonial-author-desig">CEO of Advisor Fuel</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="swiper-slide">
+                            <div class="tp-testimonial-item">
+                                <div class="tp-testimonial-item-box d-sm-flex align-items-center text-center text-sm-start">
+                                    <div class="tp-testimonial-thumb mr-40">
+                                        <img src="assets/img/testimonial/test-author-1.png" alt="">
+                                    </div>
+                                    <div class="tp-testimonial-content-wrapper">
+                                        <span class="tp-testimonial-qoute">
+                                            <svg width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M24.2289 29.0379C24.7654 29.0379 25.8383 28.0753 27.4476 26.1502C29.0569 24.332 30.559 22.2465 31.9537 19.8935C33.2412 17.5406 33.8849 15.455 33.8849 13.6368C33.8849 13.1021 33.7776 12.5139 33.563 11.8721C33.3485 12.6208 32.8657 13.2625 32.1147 13.7973C31.2563 14.439 30.0762 14.7598 28.5741 14.7598C26.3211 14.7598 24.6581 14.1181 23.5852 12.8347C22.405 11.6582 21.8149 10.1609 21.8149 8.34273C21.8149 6.20369 22.6732 4.27856 24.3899 2.56734C25.9992 0.856103 28.1986 0.000488217 30.9881 0.000488217C33.4558 0.000488217 35.4942 0.695676 37.1036 2.08605C38.6056 3.47643 39.5176 5.13418 39.8394 7.05931C39.9467 7.59407 40.0004 8.44969 40.0004 9.62616C40.0004 13.6903 38.6593 17.5406 35.977 21.177C33.2948 24.9203 29.7007 27.8614 25.1945 30.0005L24.2289 29.0379ZM2.98579 29.0379C3.52223 29.0379 4.59512 28.0753 6.20445 26.1502C7.81377 24.332 9.31581 22.2465 10.7106 19.8935C11.998 17.5406 12.6418 15.455 12.6418 13.6368C12.6418 13.1021 12.5345 12.5139 12.3199 11.8721C12.1053 12.6208 11.6225 13.2625 10.8715 13.7973C10.0132 14.439 8.83301 14.7598 7.33097 14.7598C5.07791 14.7598 3.41494 14.1181 2.34205 12.8347C1.16188 11.6582 0.571791 10.1609 0.571791 8.34273C0.571791 6.20369 1.4301 4.27856 3.14672 2.56734C4.75605 0.856103 6.95546 0.000488217 9.74497 0.000488217C12.2126 0.000488217 14.2511 0.695676 15.8604 2.08605C17.3625 3.47643 18.2744 5.13418 18.5963 7.05931C18.7036 7.59407 18.7572 8.44969 18.7572 9.62616C18.7572 13.6903 17.4161 17.5406 14.7339 21.177C12.0517 24.9203 8.4575 27.8614 3.95138 30.0005L2.98579 29.0379Z" fill="currentColor"/>
+                                            </svg>                                    
+                                        </span>
+                                        <p class="tp-testimonial-desc mb-30">
+                                            We help our clients succeed by creating <br> brand identities, digital experiences, material <br> that communicate clearly,
+                                            achieve marketing goals!
+                                        </p>
+                                        <div class="tp-testimonial-author-info">
+                                            <h5 class="tp-testimonial-author-title">Nathalie Grossman</h5>
+                                            <span class="tp-testimonial-author-desig">CEO of Advisor Fuel</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="swiper-slide">
+                            <div class="tp-testimonial-item">
+                                <div class="tp-testimonial-item-box d-sm-flex align-items-center text-center text-sm-start">
+                                    <div class="tp-testimonial-thumb mr-40">
+                                        <img src="assets/img/testimonial/test-author-2.png" alt="">
+                                    </div>
+                                    <div class="tp-testimonial-content-wrapper">
+                                        <span class="tp-testimonial-qoute">
+                                            <svg width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M24.2289 29.0379C24.7654 29.0379 25.8383 28.0753 27.4476 26.1502C29.0569 24.332 30.559 22.2465 31.9537 19.8935C33.2412 17.5406 33.8849 15.455 33.8849 13.6368C33.8849 13.1021 33.7776 12.5139 33.563 11.8721C33.3485 12.6208 32.8657 13.2625 32.1147 13.7973C31.2563 14.439 30.0762 14.7598 28.5741 14.7598C26.3211 14.7598 24.6581 14.1181 23.5852 12.8347C22.405 11.6582 21.8149 10.1609 21.8149 8.34273C21.8149 6.20369 22.6732 4.27856 24.3899 2.56734C25.9992 0.856103 28.1986 0.000488217 30.9881 0.000488217C33.4558 0.000488217 35.4942 0.695676 37.1036 2.08605C38.6056 3.47643 39.5176 5.13418 39.8394 7.05931C39.9467 7.59407 40.0004 8.44969 40.0004 9.62616C40.0004 13.6903 38.6593 17.5406 35.977 21.177C33.2948 24.9203 29.7007 27.8614 25.1945 30.0005L24.2289 29.0379ZM2.98579 29.0379C3.52223 29.0379 4.59512 28.0753 6.20445 26.1502C7.81377 24.332 9.31581 22.2465 10.7106 19.8935C11.998 17.5406 12.6418 15.455 12.6418 13.6368C12.6418 13.1021 12.5345 12.5139 12.3199 11.8721C12.1053 12.6208 11.6225 13.2625 10.8715 13.7973C10.0132 14.439 8.83301 14.7598 7.33097 14.7598C5.07791 14.7598 3.41494 14.1181 2.34205 12.8347C1.16188 11.6582 0.571791 10.1609 0.571791 8.34273C0.571791 6.20369 1.4301 4.27856 3.14672 2.56734C4.75605 0.856103 6.95546 0.000488217 9.74497 0.000488217C12.2126 0.000488217 14.2511 0.695676 15.8604 2.08605C17.3625 3.47643 18.2744 5.13418 18.5963 7.05931C18.7036 7.59407 18.7572 8.44969 18.7572 9.62616C18.7572 13.6903 17.4161 17.5406 14.7339 21.177C12.0517 24.9203 8.4575 27.8614 3.95138 30.0005L2.98579 29.0379Z" fill="currentColor"/>
+                                            </svg>                                    
+                                        </span>
+                                        <p class="tp-testimonial-desc mb-30">
+                                            We help our clients succeed by creating <br> brand identities, digital experiences, material <br> that communicate clearly,
+                                            achieve marketing goals!
+                                        </p>
+                                        <div class="tp-testimonial-author-info">
+                                            <h5 class="tp-testimonial-author-title">Nathalie Grossman</h5>
+                                            <span class="tp-testimonial-author-desig">CEO of Advisor Fuel</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="tp-testimonial-arrow d-none d-sm-block d-flex align-items-center p-absolute">
+                            <div class="tp-testimonial-arrow-btn tp-testimonial-arrow-btn-prev">
+                                <span>
+                                    <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.06982 1L1.06982 6L6.06982 11" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M27 6.07007H1" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="tp-testimonial-arrow-btn tp-testimonial-arrow-btn-next">
+                                <span>
+                                    <svg width="29" height="12" viewBox="0 0 29 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23.0698 11L28.0698 6L23.0698 1" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M27 6.07007H1" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                        
+                                </span>
+                            </div>
+                        </div>
+                        <div class="tp-testimonial-pagination swiper-pagination d-block d-sm-none"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- testimonial-area-end -->
+
+        <!-- blog-area-start -->
+        <section class="tp-blog-area pb-90">
+            <div class="container">
+                <div class="row align-items-end justify-content-center">
+                    <div class="col-md-8">
+                        <div class="tp-section-content-wrapper text-center text-md-start mb-50">
+                            <div class="tp-banner-sub-title">
+                                <span>From our blog</span>
+                                <i>
+                                    <svg width="130" height="40" viewBox="0 0 130 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <rect width="130" height="40" fill="url(#pattern0_2214_617)" fill-opacity="0.08"/>
+                                        <defs>
+                                        <pattern id="pattern0_2214_617" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_2214_617" transform="matrix(0.00603175 0 0 0.0205405 -0.0507936 0)"/>
+                                        </pattern>
+                                        <image id="image0_2214_617" width="180" height="50" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAyCAYAAAD1JPH3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMS1jMDAwIDc5LmVkYTJiM2ZhYywgMjAyMS8xMS8xNy0xNzoyMzoxOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUMyMzkwQTczMTM3MTFFRDg3NUZBOUZCRDk1MThFMTMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUMyMzkwQTYzMTM3MTFFRDg3NUZBOUZCRDk1MThFMTMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIzLjEgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjFBQkIwMjIzMTA2MTFFREEzRkNBQzVFOTRFRTVERTgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjFBQkIwMjMzMTA2MTFFREEzRkNBQzVFOTRFRTVERTgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5lgZ3iAAAB2ElEQVR42uzd7U3CUBiA0Wr4DxvQDWQE4gS6gSO6ibhB2aBMoCG5ja83pVRaSSnnJE2/MII+t7386sPz21dxQ1ZpKdNSpPUynItL/nNd6rSc2t6n/Sot+TYTsJhgrJsU6TqLt7zS779EE3ad1vuwvwuDg5kF3QQao92E47fq3ICrQ/RN8LsQPBMPOob7lEV8j5o7z6Yj+Cbwzyx+U5orB32MdCvcwcFv0/ZLx5SmubrHAVCZ0lwW9CrEu07rcsC8k/GmNPk8vg7hx2P13K/4fYP+6LhdcjvR5wMgrmP0h5bXxdecmjadu1N0ffFuOxc/zzKcP65fhwQt5nkOgGJu08NH/1cEDYIGQYOgETQIGgQNggZBI2gQNAgaBA2CRtAgaBA0CBoEjaBB0CBoEDQIGkGDoEHQIGgQNIIGQYOgQdAgaAQNE7aY+Ptre7JSn6ct9VWe2UfQvx4XFuPbZ+fz1/5HsGPEHh831mw359bhWH6OCQf9Xvw8v67OQmyLcg6GfJ4Yd769Dvviv+yuXQ0N+tXf8aKpUtUz/rJlvWw5Pmf5RfIQ7vJV0fO55wvtTSL+3R+mQasTd4BlyzRpdeWBEKeL+aC+yt1d0PczDSpH/PJbjfi+RvUtwADssXzgKiX3gwAAAABJRU5ErkJggg=="/>
+                                        </defs>
+                                    </svg>
+                                </i>
+                            </div>
+                            <h2 class="tp-section-title mb-25">Latest blog & news</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tp-blog-more-btn-wrap text-center text-md-end p-relative mb-50">
+                            <a href="" class="tp-blog-more-btn">
+                                See all our Blog
+                                <svg width="23" height="12" viewBox="0 0 23 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.7095 1L21.7095 6L16.7095 11" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M1 6H21" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                                                                    
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center justify-content-md-start">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="tp-blog-item mb-30">
+                            <div class="tp-blog-thumb w-img mb-15">
+                                <a href=""><img src="assets/img/blog/blog-1.jpg" alt=""></a>
+                            </div>
+                            <div class="tp-blog-content-wrapper">
+                                <div class="tp-blog-tag mb-15">
+                                    <a href="">SEO Analysis</a>
+                                    <a href="">Marketing</a>
+                                </div>
+                                <a href="">
+                                    <h5 class="tp-blog-title mb-25">Simple ways to Optimize your Website For SEO</h5>
+                                </a>
+                                <div class="tp-blog-author-info d-flex align-items-center">
+                                    <div class="tp-blog-author-thumb mr-10">
+                                        <img src="assets/img/blog/blog-author-1.png" alt="">
+                                    </div>
+                                    <div class="tp-blog-author-content">
+                                        <h6 class="tp-blog-author-title">Nathalie Grossman</h6>
+                                        <span>March 3, 2025</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="tp-blog-item mb-30">
+                            <div class="tp-blog-thumb w-img mb-15">
+                                <a href=""><img src="assets/img/blog/blog-2.jpg" alt=""></a>
+                            </div>
+                            <div class="tp-blog-content-wrapper">
+                                <div class="tp-blog-tag mb-15">
+                                    <a href="">SEO Analysis</a>
+                                    <a href="">Marketing</a>
+                                </div>
+                                <a href="">
+                                    <h5 class="tp-blog-title mb-25">The Trend of Marketing With Tiktok, Should or not?</h5>
+                                </a>
+                                <div class="tp-blog-author-info d-flex align-items-center">
+                                    <div class="tp-blog-author-thumb mr-10">
+                                        <img src="assets/img/blog/blog-author-2.png" alt="">
+                                    </div>
+                                    <div class="tp-blog-author-content">
+                                        
+                                        <h6 class="tp-blog-author-title">Jason Response</h6>
+                                        <span>March 16, 2025</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="tp-blog-item mb-30">
+                            <div class="tp-blog-thumb w-img mb-15">
+                                <a href=""><img src="assets/img/blog/blog-3.jpg" alt=""></a>
+                            </div>
+                            <div class="tp-blog-content-wrapper">
+                                <div class="tp-blog-tag mb-15">
+                                    <a href="">SEO Analysis</a>
+                                    <a href="">Marketing</a>
+                                </div>
+                                <a href="">
+                                    <h5 class="tp-blog-title mb-25">How to Increase Your ROI Through scientific SEM?</h5>
+                                </a>
+                                <div class="tp-blog-author-info d-flex align-items-center">
+                                    <div class="tp-blog-author-thumb mr-10">
+                                        <img src="assets/img/blog/blog-author-3.png" alt="">
+                                    </div>
+                                    <div class="tp-blog-author-content">
+                                        <h6 class="tp-blog-author-title">Eleanor Fant</h6>
+                                        <span> January 24, 2025</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- blog-area-end -->
+
+        <!-- contact-area-start -->
+        <section class="tp-contact-area tp-contact-bg p-relative z-index-1 fix pb-120 pt-120">
+            <div class="tp-contact-shape">
+                <div class="tp-contact-shape-line p-absolute">
+                    <img src="assets/img/contact/contact-line-shape.png" alt="">
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="tp-contact-left-wrapper mb-40">
+                            <div class="tp-contact-section-wrapper mb-60">
+                                <div class="tp-contact-section-sub-title mb-15">
+                                    <span>Contact Us</span>
+                                    <i>
+                                        <svg width="110" height="37" viewBox="0 0 110 37" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <rect width="110" height="36.6667" fill="url(#pattern0_2214_726)" fill-opacity="0.08"/>
+                                            <defs>
+                                            <pattern id="pattern0_2214_726" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_2214_726" transform="matrix(0.00603175 0 0 0.0205405 -0.0507936 0)"/>
+                                            </pattern>
+                                            <image id="image0_2214_726" width="180" height="50" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAyCAYAAAD1JPH3AAAAAXNSR0IArs4c6QAAA8FJREFUeF7tnXFu2mAMxZ9hlajEtPQEzQ3KbtAr7KQ7ytgN0hM01SoVqYAnf8kXMoQmp4yA2YtUNQEncX5+MU7+eYJAy/OzFrMZijVQClBa6mrrgi9QFCooRFFAUNh2d2n724euWVBDUaeveusqqEVRK/DUfIVKgcrWPwHV7a2kdS6XQUAuIw0gi3W7xUIFJSa4b0Vpws1/l5Lufh4m6iqJ38S+xZMoqu0E9XqF5d2dNDcKl5MTGFXQJtqbG5SYYpE6K3APwaIn3JNf8FlOYB2/7exZ8CpYygb1fC7Ls+R0pSc9iaD7woXgIYlXsWg77ZWiPOKymhFnaR0eip95rOFIM5zp0YJ+e9NyAzxSuMPhD9gjjTRtl7dxps4d/v0dFUeaHUm3oLuuO8Fjmm9NxDbb9h++BlSIof+cwG6Obx9iTfh5lrfxZjpFfe0PsS5Bv670B5qRgcv1EMhvZ9L//DbH3vCo4iVfZpr520W2qO1B9xCCfMP8Dc9mg0KnvbdPveDJFoVO/vzORtXu3O2brDbX4vNMvh3Mw1Of1zdVTxxjSGAsAvNbOdiMfR2agh6rTjyPkwAF7QTFsBgEKOgYdWKWTgIUtBMUw2IQoKBj1IlZOglQ0E5QDItBgIKOUSdm6SRAQTtBMSwGAQo6Rp2YpZMABe0ExbAYBCjoGHVilk4CFLQTFMNiEKCgY9SJWToJUNBOUAyLQYCCjlEnZukkQEE7QTEsBgEKOkadmKWTAAXtBMWwGAQo6Bh1YpZOAhS0ExTDYhCgoGPUiVk6CVDQTlAMi0GAgo5RJ2bpJEBBO0ExLAYBCjpGnZilkwAF7QTFsBgEKOgYdWKWTgIUtBMUw2IQoKBj1IlZOglQ0E5QDItBgIKOUSdm6SRAQTtBMSwGAQo6Rp2YpZMABe0ExbAYBCjoGHVilk4CFLQTFMNiEIgp6L7/duZ86LOP16BzWWoPsb/98SNzz5MSGFPQnV1YZxXWmMx35u/5Svsm8Pmz1Qr1JRhJmqGo5dS3IsvWY9luzKydVVCIeTUKiqu3eD6pRIcd/ChB/1rpdzNxhOKlM2hvRFqZfa+lcu2GjkNwm0npbIZiDZT9m8CErxPcpxug8eDjL8IQsBbb+qbPZ/L10K4uW7eh52S8n0B26DVDStk585Ywo0nbts7/fzj29o1AK2ueyQ7ajEDbxulpmhS0X3tnj0y+6q0ba+r8grI38jQ3QNPFmvFnNwaNk3v/+Wa33gh1pF93CnqcUp/9LPmZwBKxUeiYhPKYmY/h6ZzHnG/Ivr8BzR+pQjtiQuwAAAAASUVORK5CYII="/>
+                                            </defs>
+                                        </svg>
+                                            
+                                    </i>
+                                </div>
+                                <h3 class="tp-contact-section-title mb-25">Ready to get started? <br>
+                                    Let’s chat.</h3>
+                            </div>
+                            <div class="tp-contact-bottom mr-70">
+                                <div class="tp-contact-info mb-40">
+                                    <a href="mailto:info@gmail.com" target="_blank" class="tp-contact-info-item mb-15">
+                                        <span>
+                                            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.5 16.3H5.5C2.8 16.3 1 14.95 1 11.8V5.5C1 2.35 2.8 1 5.5 1H14.5C17.2 1 19 2.35 19 5.5V11.8C19 14.95 17.2 16.3 14.5 16.3Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path opacity="0.4" d="M14.5 5.94922L11.683 8.19922C10.756 8.93722 9.235 8.93722 8.308 8.19922L5.5 5.94922" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>                                                
+                                        </span>info@gmail.com
+                                    </a>
+                                    <a href="" target="_blank" class="tp-contact-info-item mb-15">
+                                        <span>
+                                            <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path opacity="0.4" d="M8.99996 11.6048C10.5986 11.6048 11.8946 10.3088 11.8946 8.7101C11.8946 7.11142 10.5986 5.81543 8.99996 5.81543C7.40127 5.81543 6.10529 7.11142 6.10529 8.7101C6.10529 10.3088 7.40127 11.6048 8.99996 11.6048Z" stroke="white" stroke-width="1.5"/>
+                                                <path d="M1.22522 7.02129C3.05295 -1.01328 14.9564 -1.004 16.7748 7.03057C17.8418 11.7437 14.91 15.7331 12.34 18.201C10.4752 20.0009 7.52485 20.0009 5.65073 18.201C3.09006 15.7331 0.158278 11.7344 1.22522 7.02129Z" stroke="white" stroke-width="1.5"/>
+                                            </svg>
+                                                                                               
+                                        </span>3rd Street, London, UK
+                                    </a>
+                                    <a href="tel:+441236547890" target="_blank" class="tp-contact-info-item mb-15">
+                                        <span>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16.976 14.064C16.976 14.352 16.912 14.648 16.776 14.936C16.64 15.224 16.464 15.496 16.232 15.752C15.84 16.184 15.408 16.496 14.92 16.696C14.44 16.896 13.92 17 13.36 17C12.544 17 11.672 16.808 10.752 16.416C9.832 16.024 8.912 15.496 8 14.832C7.08 14.16 6.208 13.416 5.376 12.592C4.552 11.76 3.808 10.888 3.144 9.976C2.488 9.064 1.96 8.152 1.576 7.248C1.192 6.336 1 5.464 1 4.632C1 4.088 1.096 3.568 1.288 3.088C1.48 2.6 1.784 2.152 2.208 1.752C2.72 1.248 3.28 1 3.872 1C4.096 1 4.32 1.048 4.52 1.144C4.728 1.24 4.912 1.384 5.056 1.592L6.912 4.208C7.056 4.408 7.16 4.592 7.232 4.768C7.304 4.936 7.344 5.104 7.344 5.256C7.344 5.448 7.288 5.64 7.176 5.824C7.072 6.008 6.92 6.2 6.728 6.392L6.12 7.024C6.032 7.112 5.992 7.216 5.992 7.344C5.992 7.408 6 7.464 6.016 7.528C6.04 7.592 6.064 7.64 6.08 7.688C6.224 7.952 6.472 8.296 6.824 8.712C7.184 9.128 7.568 9.552 7.984 9.976C8.416 10.4 8.832 10.792 9.256 11.152C9.672 11.504 10.016 11.744 10.288 11.888C10.328 11.904 10.376 11.928 10.432 11.952C10.496 11.976 10.56 11.984 10.632 11.984C10.768 11.984 10.872 11.936 10.96 11.848L11.568 11.248C11.768 11.048 11.96 10.896 12.144 10.8C12.328 10.688 12.512 10.632 12.712 10.632C12.864 10.632 13.024 10.664 13.2 10.736C13.376 10.808 13.56 10.912 13.76 11.048L16.408 12.928C16.616 13.072 16.76 13.24 16.848 13.44C16.928 13.64 16.976 13.84 16.976 14.064Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10"/>
+                                                <path opacity="0.4" d="M14.2 6.5998C14.2 6.1198 13.824 5.3838 13.264 4.7838C12.752 4.2318 12.072 3.7998 11.4 3.7998" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path opacity="0.4" d="M17 6.6C17 3.504 14.496 1 11.4 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>                                                
+                                        </span>+44 123 654 7890
+                                    </a>
+                                </div>
+                                <div class="tp-contact-social">
+                                    <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+                                    <a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="" target="_blank"><i class="fab fa-vimeo-v"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="tp-contact-msg-wrapper p-relative z-index-3">
+                            <div class="tp-contact-form-wrapper p-relative z-index-2">
+                                <h3 class="tp-contact-title mb-30">Send a message</h3>
+                                <form action="#">
+                                    <div class="tp-contact-form-box">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <input type="text" placeholder="Full name">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <input type="email" placeholder="Email Address">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <input type="tel" placeholder="Phone number">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <input type="text" placeholder="Website">
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <textarea placeholder="Massage"></textarea>
+                                            </div>
+
+                                        </div>
+                                        <button type="submit" class="tp-contact-submit-btn">Send Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tp-contact-shape-one p-absolute">
+                                <img src="assets/img/contact/contact-shape-1.png" alt="">
+                            </div>
+                            <div class="tp-contact-shape-two p-absolute">
+                                <img src="assets/img/contact/contact-shape-2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact-area-end -->
+
+    </main>
+
+    <!-- footer-area-start -->
+    <footer>
+        <div class="tp-footer-area pt-95">
+            <div class="container">
+                <div class="tp-footer-top tp-footer-bottom-border">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="tp-footer-widget-wrapper wrapper-1 mb-50">
+                                <div class="tp-footer-content">
+                                    <div class="tp-footer-logo mb-30">
+                                        <a href="">
+                                            <img src="assets/img/logo/logo-1.png" alt="">
+                                        </a>
+                                    </div>
+                                    <p class="tp-footer-desc mb-30">
+                                        This SEO is most reputed <br> firm which provides various <br> online marketing 
+                                    </p>
+                                    <div class="tp-footer-social-wrapper">
+                                        <h5 class="tp-footer-social-title">Follow Us On</h5>
+                                        <div class="tp-footer-social">
+                                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                                            <a href=""><i class="fab fa-twitter"></i></a>
+                                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                            <a href=""><i class="fab fa-vimeo-v"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="tp-footer-widget-wrapper wrapper-2 mb-50 pl-30">
+                                <h4 class="tp-footer-widget-title mb-20">Information</h4>
+                                <div class="tp-footer-widget-menu">
+                                    <ul>
+                                        <li><a href="">Home</a></li>
+                                        <li><a href="">About Us</a></li>
+                                        <li><a href="">Project</a></li>
+                                        <li><a href="">Plan & Pricing</a></li>
+                                        <li><a href="">Blog</a></li>
+                                        <li><a href=""> Contact Us</a></li>
+                                    </ul>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="tp-footer-widget-wrapper wrapper-3 mb-50 pl-100">
+                                <h4 class="tp-footer-widget-title mb-20">Services</h4>
+                                <div class="tp-footer-widget-menu">
+                                    <ul>
+                                        <li><a href="">SEO Audit</a></li>
+                                        <li><a href="">SEO Services</a></li>
+                                        <li><a href="">SEO Marketing</a></li>
+                                        <li><a href=""> SEO Analysis</a></li>
+                                        <li><a href="">SEO Optimization</a></li>
+                                        <li><a href="">Social Media</a></li>
+                                    </ul>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="tp-footer-widget-wrapper wrapper-4 mb-50 pl-70">
+                                <h4 class="tp-footer-widget-title mb-20">Subscribe.</h4>
+                                <div class="tp-footer-subscribe">
+                                    <p>Our conversation is just getting started</p>
+                                    <div class="tp-footer-subscribe-form">
+                                        <form action="#">
+                                            <div class="tp-footer-subscribe-input mb-15 p-relative">
+                                                <input type="email" placeholder="Your Email">
+                                                <span>
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13 14.6H5C2.6 14.6 1 13.4 1 10.6V5C1 2.2 2.6 1 5 1H13C15.4 1 17 2.2 17 5V10.6C17 13.4 15.4 14.6 13 14.6Z" stroke="#565764" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M13 5.39844L10.496 7.39844C9.672 8.05444 8.32 8.05444 7.496 7.39844L5 5.39844" stroke="#565764" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <button type="submit" class="tp-footer-subscribe-btn">Subscribe.</button>
+                                        </form>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="tp-footer-bottom pt-30 pb-40">
+                    <p class="tp-footer-copyright text-center">© 2025 Copyrights by company. All Rights Reserved. Designed by <a href="">Theme_Pure</a></p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-area-end -->
+
+
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
